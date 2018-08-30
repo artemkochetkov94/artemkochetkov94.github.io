@@ -1993,7 +1993,7 @@ input {
       -ms-transform: none;
       transform: none; }
     .check-block--accent .check-block__input:checked + .check-block__label::after {
-      content: url("img/static/icons/icon-check-accent.svg"); }
+      content: url("../img/static/icons/icon-check-accent.svg"); }
     .check-block--accent .check-block__input:disabled + .check-block__label::after {
       opaicty: 0.1;
       filter: alpha(opacity=30);

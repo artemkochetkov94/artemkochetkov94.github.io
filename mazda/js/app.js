@@ -879,7 +879,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	            // balloonContent: 'Это красивая метка'
 	        }, {
 	            iconLayout: 'default#image',
-	            iconImageHref: '..img/static/icons/icon-map.svg',
+	            iconImageHref: '../img/static/icons/icon-map.svg',
 	            iconImageSize: [56, 65],
 	            iconImageOffset: [-25, -65]
 	        });

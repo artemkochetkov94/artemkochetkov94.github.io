@@ -3583,7 +3583,9 @@ img.mfp-img {
           height: 18px; } }
     .checkbox label::after {
       content: '';
-      background-image: url("..img/static/icons/icon-check.svg");
+      background-image: url("../
+      
+      img/static/icons/icon-check.svg");
       background-size: cover;
       background-repeat: no-repeat;
       width: 31px;
