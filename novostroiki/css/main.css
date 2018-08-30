@@ -1425,7 +1425,7 @@ img.mfp-img {
 .pswp__button,
 .pswp__button--arrow--left:before,
 .pswp__button--arrow--right:before {
-  background: url(..img/pswp/default-skin.png) 0 0 no-repeat;
+  background: url(../img/pswp/default-skin.png) 0 0 no-repeat;
   background-size: 264px 88px;
   width: 44px;
   height: 44px; }
@@ -1433,14 +1433,14 @@ img.mfp-img {
 .pswp__button,
 .pswp__button--arrow--left:before,
 .pswp__button--arrow--right:before {
-  background-image: url(..img/pswp/default-skin.svg); }
+  background-image: url(../img/pswp/default-skin.svg); }
 
 @media (-webkit-min-device-pixel-ratio: 1.1), (-webkit-min-device-pixel-ratio: 1.09375), (min-resolution: 105dpi), (min-resolution: 1.1dppx) {
   /* Serve SVG sprite if browser supports SVG and resolution is more than 105dpi */
   .pswp--svg .pswp__button,
   .pswp--svg .pswp__button--arrow--left:before,
   .pswp--svg .pswp__button--arrow--right:before {
-    background-image: url(..img/pswp/default-skin.svg); }
+    background-image: url(img/pswp/default-skin.svg); }
   .pswp--svg .pswp__button--arrow--left,
   .pswp--svg .pswp__button--arrow--right {
     background: none; } }
@@ -1703,7 +1703,7 @@ a.pswp__share--download:hover {
 
 .pswp__preloader--active .pswp__preloader__icn {
   /* We use .gif in browsers that don't support CSS animation */
-  background: url(..img/pswp/preloader.gif) 0 0 no-repeat; }
+  background: url(../img/pswp/preloader.gif) 0 0 no-repeat; }
 
 .pswp--css_animation .pswp__preloader--active {
   opacity: 1; }
@@ -2077,7 +2077,7 @@ a.pswp__share--download:hover {
     position: absolute;
     top: 0;
     left: 0;
-    background: url("..img/specialist/mask.png");
+    background: url("img/specialist/mask.png");
     background-position: center bottom;
     background-size: cover;
     display: block;
@@ -2838,7 +2838,7 @@ a.pswp__share--download:hover {
 
 .s-consultation-over {
   margin-top: -200px;
-  background-image: url("..img/consultation/consultation-bg.png"); }
+  background-image: url("img/consultation/consultation-bg.png"); }
 
 .consultation__inner {
   width: 50%;
@@ -3024,7 +3024,7 @@ a.pswp__share--download:hover {
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url("..img/index/solnse.png");
+      background-image: url("img/index/solnse.png");
       background-size: 500px auto;
       background-position: top -50px left -120px;
       background-repeat: no-repeat; }
@@ -3297,7 +3297,7 @@ a.pswp__share--download:hover {
   position: relative;
   padding: 175px 0 122px;
   background-color: #222f46;
-  background-image: url("..img/index/question-bg.jpg");
+  background-image: url("img/index/question-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -3741,7 +3741,7 @@ a.pswp__share--download:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("..img/object/hero-bg-gradient.png");
+    background-image: url("img/object/hero-bg-gradient.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% auto; }
@@ -4424,7 +4424,7 @@ a.pswp__share--download:hover {
   font-size: 24px;
   font-weight: 700;
   text-align: center;
-  background-image: url("..img/exchange/arrow.png");
+  background-image: url("img/exchange/arrow.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
