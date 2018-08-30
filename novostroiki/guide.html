@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>document</title>
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+<body>
+
+
+
+
+
+<div class="site-wrapper" style="padding: 100px;">
+
+
+
+
+
+	<div class="site-content">
+
+
+
+
+
+
+		<div style="max-width: 600px; background: #000; padding: 50px; display: flex;">
+			<!-- обычное состояние -->
+			<div class="inputs__input-wrap input-wrap js-label-fly">
+				<input type="text" class="input">
+				<label for="" class="label label-fly">Ваш телефон</label>
+			</div>
+			<!-- ошибка ввода -->
+			<div class="error inputs__input-wrap input-wrap js-label-fly">
+				<input type="text" class="input">
+				<label for="" class="label label-fly">Ваше имя</label>
+				<span>Обязательное поле. от 2 до 32 символов</span>
+			</div>
+		</div>
+
+
+
+
+
+		<div style="background: blue; max-width: 600px; padding: 50px;">
+			<!-- обычное состояние -->
+			<div class="send__button">
+				<button class="button button--rounded">Отправить</button>
+			</div>
+			<!-- complite -->
+			<div class="complite send__button">
+				<button class="button button--rounded">Отправить</button>
+				<span>Ваш вопрос успешно отправлен</span>
+			</div>
+		</div>
+
+
+
+
+
+		<div class="modal-callback__form" style="max-width: 500px; background: #f5f5f6; padding: 50px;">
+
+			<form>
+
+				<div class="modal-callback__row">
+					<div class="error input-wrap js-label-fly field-black">
+						<input type="text" class="input">
+						<label for="" class="label label-fly">Ваше имя</label>
+						<span>Обязательное поле. от 2 до 32 символов</span>
+					</div>
+					<div class="error input-wrap js-label-fly field-black">
+						<input type="text" class="input">
+						<label for="" class="label label-fly">Ваш телефон</label>
+						<span>Обязательное поле. от 6 до 18 символов</span>
+					</div>
+				</div>
+
+				<div class="complite modal-callback__button">
+					<div class="button button--rounded">Отправить</div>
+					<span>Ваша заявка успешно отправлена</span>
+				</div>
+
+			</form>
+
+		</div><!-- modal-callback__form -->
+
+
+
+
+
+		<div style="background-color: #000; color: #fff; max-width: 500px; padding: 50px;">
+
+			<div class="question__item custom-ask">
+				<input type="radio" name="question" id="question-9" class="radio-item" checked>
+				<label for="question-9">Свой вопрос:</label>
+				<div class="question-textarea">
+					<textarea name="" id="" cols="30" rows="10" placeholder="Введите ваш вопрос"></textarea>
+				</div>
+			</div>
+
+			<div class="error question__item custom-ask">
+				<input type="radio" name="question" id="question-9" class="radio-item" checked>
+				<label for="question-9">Свой вопрос:</label>
+				<div class="question-textarea">
+					<textarea name="" id="" cols="30" rows="10" placeholder="Введите ваш вопрос"></textarea>
+					<span>Введите Ваш вопрос</span>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<!-- дома -->
+		<div class="home-unit">
+			<a href="object.html" class="home-unit__inner">
+				<div class="home-unit__head">
+					<div class="home-unit__img"><img src="img/units/1.jpg" alt="#"></div>
+					<span class="home-unit__price button button--imp">от  1 169 000 ₽</span>
+					<!-- <div class="home-unit__button-wrapp"></div> -->
+				</div>
+				<div class="home-unit__body">
+					<div class="home-unit__title title">Жилой комплекс «Перовский»</div>
+					<ul class="home-unit__list">
+						<li class="home-unit__list-item">
+							<svg class="inline-svg icon-marker" width="100%" height="100%">
+								<use xlink:href="img/sprite.svg#icon-marker"></use>
+							</svg>
+							<span>7 км от Оренбурга по Беляевскому шоссе</span>
+						</li>
+						<li class="home-unit__list-item">
+							<svg class="inline-svg icon-check" width="100%" height="100%">
+								<use xlink:href="img/sprite.svg#icon-check"></use>
+							</svg>
+							<span>Введен в эксплуатацию</span>
+						</li>
+						<li class="home-unit__list-item">
+							<svg class="inline-svg icon-exclamation" width="100%" height="100%">
+								<use xlink:href="img/sprite.svg#icon-exclamation"></use>
+							</svg>
+							<span>Осталось 5 квартир</span>
+						</li>
+						<li class="home-unit__list-item">
+							<svg class="inline-svg icon-helment" width="100%" height="100%">
+								<use xlink:href="img/sprite.svg#icon-helment"></use>
+							</svg>
+							<span>Ведется строительство</span>
+						</li>
+
+						<li class="home-unit__list-item">
+							<svg class="inline-svg icon-sale-open" width="100%" height="100%">
+								<use xlink:href="img/sprite.svg#icon-sale-open"></use>
+							</svg>
+							<span>Открыты продажи</span>
+						</li>
+						<li class="home-unit__list-item">
+							<svg class="inline-svg icon-sale-close" width="100%" height="100%">
+								<use xlink:href="img/sprite.svg#icon-sale-close"></use>
+							</svg>
+							<span>Продажа квартир закончена</span>
+						</li>
+						<li class="home-unit__list-item">
+							<svg class="inline-svg icon-check-grey" width="100%" height="100%">
+								<use xlink:href="img/sprite.svg#icon-check"></use>
+							</svg>
+							<span>Дом сдан</span>
+						</li>
+					</ul>
+					<div class="home-unit__button">
+						<button class="js-modal-reservation button button--rounded">Забронировать квартиру</button>
+					</div>
+				</div>
+			</a>
+		</div><!-- home-unit -->
+
+
+
+
+
+	</div><!-- site-content -->
+
+
+
+
+
+</div><!-- site-wrapper -->
+
+
+
+
+
+	<script src="libs/svg4everybody.min.js"></script>
+	<script>svg4everybody();</script>
+
+	<script src="libs/jquery.min.js"></script>
+
+	<script src="libs/owl.carousel.min.js"></script>
+
+	<script src="libs/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+
+	<script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>service</title>
+    <link rel="stylesheet" href="css/main.css"> </head>
+  <body>
+    <div class="p-wrapper">
+      <div class="popup mfp-hide" style="background-image: url('img/static/stars.jpg');">
+        <div class="popup__container">
+          <div class="popup__title">Оставьте заявку</div>
+          <div class="popup__description">Мы перезвоним в ближайшее время и ответим на все интересующие вопросы</div>
+          <div class="popup__form">
+            <form>
+              <div class="form-group js-label-fly">
+                <input type="text" class="input">
+                <label class="label label--fly">Имя*</label>
+              </div>
+              <div class="form-group js-label-fly">
+                <input type="text" class="input">
+                <label class="label label--fly">Телефон*</label>
+              </div>
+              <div class="form-group js-label-fly">
+                <input type="text" class="input">
+                <label class="label label--fly">Email</label>
+              </div>
+              <div class="form-group js-label-fly">
+                <input type="text" class="input">
+                <label class="label label--fly">Сообщение</label>
+              </div>
+              <div class="popup__btn">
+                <button class="btn btn--primary">Отправить</button>
+              </div>
+              <div class="conditions">Отправляя данную форму, Вы соглашаетесь с
+                <a href="#">условиями обработки персональных данных</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="p-header">
+        <div class="container">
+          <div class="p-header__row">
+            <div class="p-header__column p-header__status">
+              <div class="status open warning сlose">Скоро закроется</div>
+            </div>
+            <a href="/homepage.html" class="p-header__column p-header__logo">
+              <svg class="icon-svg icon-logo" width="100%" height="100%">
+                <use xlink:href="/img/static/icons.svg#icon-logo"></use>
+              </svg>
+            </a>
+            <div class="p-header__column p-header__phone">
+              <a href="tel: 8 (3532) 92-92-85">8 (3532) 92-92-85</a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="menu">
+            <ul class="menu-nav">
+              <li class="menu-nav__item js-menu-nav-item" data-id="1">Проекты
+                <svg class="icon-svg icon-arrow-bottom" width="100%" height="100%">
+                  <use xlink:href="/img/static/icons.svg#icon-arrow-bottom"></use>
+                </svg>
+              </li>
+              <li class="menu-nav__item js-menu-nav-item" data-id="2">Услуги
+                <svg class="icon-svg icon-arrow-bottom" width="100%" height="100%">
+                  <use xlink:href="/img/static/icons.svg#icon-arrow-bottom"></use>
+                </svg>
+              </li>
+              <li class="menu-nav__item">О нас</li>
+            </ul>
+            <div class="submenu">
+              <div class="submenu__container container">
+                <div class="submenu__item js-submenu-item" data-id="1">
+                  <div class="submenu__row">
+                    <div class="submenu__column">
+                      <div class="submenu__list-outer">
+                        <div class="submenu__list-title">Тип Сайта:</div>
+                        <ul class="submenu__list">
+                          <li class="submenu__list-item">
+                            <a href="#">Корпоративные сайты</a>
+                          </li>
+                          <li class="submenu__list-item">
+                            <a href="#">Интернет-магазины</a>
+                          </li>
+                          <li class="submenu__list-item">
+                            <a href="#">Витрины</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="submenu__column">
+                      <div class="submenu__list-outer">
+                        <div class="submenu__list-title">Тематика Сайта:</div>
+                        <ul class="submenu__list list-column">
+                          <li class="submenu__list-item">
+                            <a href="#">Автомобили</a>
+                          </li>
+                          <li class="submenu__list-item">
+                            <a href="#">Бытовая техника</a>
+                          </li>
+                          <li class="submenu__list-item">
+                            <a href="#">Услуги</a>
+                          </li>
+                          <li class="submenu__list-item">
+                            <a href="#">Мебель</a>
+                          </li>
+                          <li class="submenu__list-item">
+                            <a href="#">Продукты</a>
+                          </li>
+                          <li class="submenu__list-item">
+                            <a href="#">Здоровье</a>
+                          </li>
+                          <li class="submenu__list-item">
+                            <a href="#">Промо</a>
+                          </li>
+                          <li class="submenu__list-item">
+                            <a href="#">Рынок</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="submenu__item js-submenu-item" data-id="2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-content">
+        <div class="p-content__inner">
+          <div class="p-content__bg-icon">
+            <svg class="icon-svg icon-laptop-bg" width="100%" height="100%">
+              <use xlink:href="/img/static/icons.svg#icon-laptop-bg"></use>
+            </svg>
+          </div>
+          <div class="breadcrumbs">
+            <div class="container">
+              <div class="breadcrumbs__inner">
+                <div class="prev">К услугам
+                  <svg class="icon-svg icon-arrow-bottom" width="100%" height="100%">
+                    <use xlink:href="/img/static/icons.svg#icon-arrow-bottom"></use>
+                  </svg>
+                </div>
+                <div class="next">Следующая услуга
+                  <svg class="icon-svg icon-arrow-bottom" width="100%" height="100%">
+                    <use xlink:href="/img/static/icons.svg#icon-arrow-bottom"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero hero--service">
+            <div class="container">
+              <div class="hero__inner">
+                <h1>Разработка Корпоративных сайтов</h1>
+                <div class="hero__description">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                </div>
+                <button class="btn btn--primary js-popup">Оставить заявку</button>
+              </div>
+            </div>
+          </div>
+          <div class="works-group">
+            <div class="container">
+              <div class="works">
+                <div class="works__item work">
+                  <img src="/img/dynamic/works/Petrovsky_1.png" alt="#">
+                  <img src="/img/dynamic/works/Petrovsky_2.png" alt="#">
+                  <a href="#" class="work__info ">
+                    <div class="work__info-inner">
+                      <div class="work__name">Рынок
+                        <br>«Петровский»</div>
+                      <div class="work__description">Lorem ipsum.</div>
+                      <div class="work__link">
+                        <span class="link link--arrow">Подробнее
+                          <svg class="icon-svg icon-arrow-right" width="100%" height="100%">
+                            <use xlink:href="/img/static/icons.svg#icon-arrow-right"></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="works__item work">
+                  <img src="/img/dynamic/works/Estheticdent_1.png" alt="#">
+                  <img src="/img/dynamic/works/Estheticdent_2.png" alt="#">
+                  <a href="#" class="work__info work__info--black">
+                    <div class="work__info-inner">
+                      <div class="work__name">Рынок
+                        <br>«Петровский»</div>
+                      <div class="work__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eius assumenda adipisci nobis nihil necessitatibus quis magni minima perspiciatis architecto.</div>
+                      <div class="work__link">
+                        <span class="link link--arrow">Подробнее
+                          <svg class="icon-svg icon-arrow-right" width="100%" height="100%">
+                            <use xlink:href="/img/static/icons.svg#icon-arrow-right"></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="works__item work">
+                  <img src="/img/dynamic/works/A-rielt_ur_1.png" alt="#">
+                  <img src="/img/dynamic/works/A-rielt_ur_2.png" alt="#">
+                  <a href="#" class="work__info work__info--black">
+                    <div class="work__info-inner">
+                      <div class="work__name">Рынок
+                        <br>«Петровский»</div>
+                      <div class="work__description">Имиджевый сайт для обновленного рынка «Петровский» в Оренбурге.</div>
+                      <div class="work__link">
+                        <span class="link link--arrow">Подробнее
+                          <svg class="icon-svg icon-arrow-right" width="100%" height="100%">
+                            <use xlink:href="/img/static/icons.svg#icon-arrow-right"></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="works-more js-works-request">
+                <button type="button" class="btn-more">Больше проектов</button>
+              </div>
+            </div>
+          </div>
+          <div class="site-cost">
+            <div class="container">
+              <h2>расчет стоимости сайта</h2>
+              <div class="tabs js-tabs">
+                <div class="tabs__nav">
+                  <button type="button" class="js-tabs-link tabs__link active" data-id="1">Стандартный проект</button>
+                  <button type="button" class="js-tabs-link tabs__link" data-id="2">Нестандартный проект</button>
+                </div>
+                <div class="tabs__items">
+                  <div id="tab-1" class="js-tabs-content tabs__content active" data-id="1">
+                    <div class="site-cost__row">
+                      <div class="site-cost__description">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                          eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                      </div>
+                      <div class="options">
+                        <div class="option">
+                          <div class="option__head">
+                            <div class="option__toggle">
+                              <label class="toggle">
+                                <input type="checkbox" checked>
+                                <span class="toggle__icon"></span>
+                              </label>
+                            </div>
+                            <span class="option__title title-16">SEO</span>
+                          </div>
+                          <div class="option__description">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean ligula massa. Cum sociis natoque penatibus et magnis.</p>
+                          </div>
+                        </div>
+                        <div class="option">
+                          <div class="option__head">
+                            <div class="option__toggle">
+                              <label class="toggle">
+                                <input type="checkbox">
+                                <span class="toggle__icon"></span>
+                              </label>
+                            </div>
+                            <span class="option__title title-16">Контекстная реклама</span>
+                          </div>
+                          <div class="option__description">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean ligula massa. Cum sociis natoque penatibus et magnis.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="tab-2" class="js-tabs-content tabs__content " data-id="2">
+                    <div class="site-cost__row">
+                      <div class="site-cost__description">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                          eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                      </div>
+                      <div class="options">
+                        <div class="option">
+                          <div class="option__head">
+                            <div class="option__toggle">
+                              <label class="toggle">
+                                <input type="checkbox" checked>
+                                <span class="toggle__icon"></span>
+                              </label>
+                            </div>
+                            <span class="option__title title-16">SEO</span>
+                          </div>
+                          <div class="option__description">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean ligula massa. Cum sociis natoque penatibus et magnis.</p>
+                          </div>
+                        </div>
+                        <div class="option">
+                          <div class="option__head">
+                            <div class="option__toggle">
+                              <label class="toggle">
+                                <input type="checkbox">
+                                <span class="toggle__icon"></span>
+                              </label>
+                            </div>
+                            <span class="option__title title-16">Контекстная реклама</span>
+                          </div>
+                          <div class="option__description">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean ligula massa. Cum sociis natoque penatibus et magnis.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="container">
+              <div class="cards__inner">
+                <div class="cards__item card ">
+                  <div class="card__inner">
+                    <div class="card__container">
+                      <div class="pack">
+                        <div class="pack__head">
+                          <div class="pack__head-row">
+                            <div class="pack__name">Базовый</div>
+                            <div class="pack__price">
+                              <div class="pack__price-old">
+                                <span>90 000 руб
+                                  <svg class="icon-svg icon-trait" width="100%" height="100%">
+                                    <use xlink:href="/img/static/icons.svg#icon-trait"></use>
+                                  </svg>
+                                </span>
+                              </div>
+                              <div>60 000 руб</div>
+                            </div>
+                          </div>
+                          <div class="pack__more">
+                            <div class="pack__more-term">
+                              <svg class="icon-svg icon-clock" width="100%" height="100%">
+                                <use xlink:href="/img/static/icons.svg#icon-clock"></use>
+                              </svg> 20 рабочих дней</div>
+                          </div>
+                        </div>
+                        <div class="pack__included">
+                          <div class="pack__description">
+                            <p>Индивидуальный дизайн, включающий 7 макетов уникальных страниц с адаптивными версиями к каждой</p>
+                          </div>
+                          <div class="pack__lists">
+                            <div class="pack__list">
+                              <div class="title-16">Виды уникальных страниц</div>
+                              <ul>
+                                <li>Услуги</li>
+                                <li>Вопросы и ответы</li>
+                                <li>Специалисты</li>
+                                <li>Отзывы</li>
+                                <li>Вакансии</li>
+                                <li>Сертификаты и награды</li>
+                                <li>Фото с клиентами</li>
+                              </ul>
+                            </div>
+                            <div class="pack__list">
+                              <div class="title-16">Гарантия</div>
+                              <ul>
+                                <li>1 месяц</li>
+                              </ul>
+                            </div>
+                            <div class="pack__list">
+                              <div class="title-16">Продвижение</div>
+                              <ul>
+                                <li>6 месяцев</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pack__checkbox">
+                          <div class="checkbox js-pack-checkbox">
+                            <input id="pack-1" type="radio" name="pack">
+                            <label for="pack-1">Выбрать</label>
+                          </div>
+                        </div>
+                        <button type="button" class="pack__toggle js-pack-toggle">
+                          <svg class="icon-svg icon-arrow-right" width="100%" height="100%">
+                            <use xlink:href="/img/static/icons.svg#icon-arrow-right"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="card__inner-decor decor-blur"></span>
+                </div>
+                <div class="cards__item card active">
+                  <div class="card__inner">
+                    <div class="card__container">
+                      <div class="card__icon">
+                        <svg class="icon-svg icon-diamond" width="100%" height="100%">
+                          <use xlink:href="/img/static/icons.svg#icon-diamond"></use>
+                        </svg>
+                      </div>
+                      <div class="pack">
+                        <div class="pack__head">
+                          <div class="pack__head-row">
+                            <div class="pack__name">Премиум</div>
+                            <div class="pack__price">
+                              <div class="pack__price">150 000 руб</div>
+                            </div>
+                          </div>
+                          <div class="pack__more">
+                            <div class="pack__more-price">
+                              <span>120 000 руб</span> при заказе SEO</div>
+                            <div class="pack__more-term">
+                              <svg class="icon-svg icon-clock" width="100%" height="100%">
+                                <use xlink:href="/img/static/icons.svg#icon-clock"></use>
+                              </svg> 40 рабочих дней</div>
+                          </div>
+                        </div>
+                        <div class="pack__included">
+                          <div class="pack__description">
+                            <p>Индивидуальный дизайн, включающий 15 макетов уникальных страниц с адаптивными версиями к каждой</p>
+                          </div>
+                          <div class="pack__lists">
+                            <div class="pack__list">
+                              <div class="title-16">Виды уникальных страниц</div>
+                              <ul>
+                                <li>Услуги</li>
+                                <li>Вопросы и ответы</li>
+                                <li>Специалисты</li>
+                                <li>Отзывы</li>
+                                <li>Вопросы юристу</li>
+                                <li>Вакансии</li>
+                                <li>Партнеры</li>
+                                <li>Сертификаты и награды</li>
+                                <li>Фото с клиентами</li>
+                                <li>Услуги</li>
+                                <li>Вопросы и ответы</li>
+                                <li>Специалисты</li>
+                                <li>Отзывы</li>
+                                <li>Вопросы юристу</li>
+                                <li>Вакансии</li>
+                              </ul>
+                            </div>
+                            <div class="pack__list">
+                              <div class="title-16">Гарантия</div>
+                              <ul>
+                                <li>3 месяця</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pack__checkbox">
+                          <div class="checkbox js-pack-checkbox">
+                            <input id="pack-2" type="radio" name="pack" checked>
+                            <label for="pack-2">Выбрать</label>
+                          </div>
+                        </div>
+                        <button type="button" class="pack__toggle js-pack-toggle">
+                          <svg class="icon-svg icon-arrow-right" width="100%" height="100%">
+                            <use xlink:href="/img/static/icons.svg#icon-arrow-right"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="card__shadow"></span>
+                  <span class="card__inner-decor decor-blur"></span>
+                </div>
+                <div class="cards__item card ">
+                  <div class="card__inner">
+                    <div class="card__container">
+                      <div class="pack">
+                        <div class="pack__head">
+                          <div class="pack__head-row">
+                            <div class="pack__name">Продвинутый</div>
+                            <div class="pack__price">
+                              <div class="pack__price">120 000 руб</div>
+                            </div>
+                          </div>
+                          <div class="pack__more">
+                            <div class="pack__more-price">
+                              <span>90 000 руб</span> при заказе SEO</div>
+                            <div class="pack__more-term">
+                              <svg class="icon-svg icon-clock" width="100%" height="100%">
+                                <use xlink:href="/img/static/icons.svg#icon-clock"></use>
+                              </svg> 30 рабочих дней</div>
+                          </div>
+                        </div>
+                        <div class="pack__included">
+                          <div class="pack__description">
+                            <p>Индивидуальный дизайн, включающий 11 макетов уникальных страниц с адаптивными версиями к каждой</p>
+                          </div>
+                          <div class="pack__lists">
+                            <div class="pack__list">
+                              <div class="title-16">Виды уникальных страниц</div>
+                              <ul>
+                                <li>Услуги</li>
+                                <li>Вопросы и ответы</li>
+                                <li>Специалисты</li>
+                                <li>Отзывы</li>
+                                <li>Вопросы юристу</li>
+                                <li>Вакансии</li>
+                                <li>Партнеры</li>
+                                <li>Сертификаты и награды</li>
+                                <li>Фото с клиентами</li>
+                                <li>Услуги</li>
+                                <li>Вопросы и ответы</li>
+                              </ul>
+                            </div>
+                            <div class="pack__list">
+                              <div class="title-16">Гарантия</div>
+                              <ul>
+                                <li>2 месяца</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pack__checkbox">
+                          <div class="checkbox js-pack-checkbox">
+                            <input id="pack-3" type="radio" name="pack">
+                            <label for="pack-3">Выбрать</label>
+                          </div>
+                        </div>
+                        <button type="button" class="pack__toggle js-pack-toggle">
+                          <svg class="icon-svg icon-arrow-right" width="100%" height="100%">
+                            <use xlink:href="/img/static/icons.svg#icon-arrow-right"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="card__inner-decor decor-blur"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="application">
+            <div class="container container--1460">
+              <h2>Оставьте заявку</h1>
+                <div class="application__description">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem.</p>
+                </div>
+                <div class="application__form decor-blur">
+                  <form>
+                    <div class="choice-wrap">
+                      <div class="choice-title">Вы выбрали:</div>
+                      <div class="choice">Премиум + SEO = 120 000 руб</div>
+                    </div>
+                    <div class="application__group">
+                      <div class="application__row row">
+                        <div class="application__column col-33">
+                          <div class="form-group js-label-fly">
+                            <input type="text" class="input" value="Анатолий">
+                            <label for="" class="label label--fly">Введите имя*</label>
+                          </div>
+                        </div>
+                        <div class="application__column col-33">
+                          <div class="form-group js-label-fly">
+                            <input type="text" class="input">
+                            <label for="" class="label label--fly">Введите телефон*</label>
+                          </div>
+                        </div>
+                        <div class="application__column col-33">
+                          <div class="form-group js-label-fly">
+                            <input type="text" class="input">
+                            <label for="" class="label label--fly">Введите email*</label>
+                          </div>
+                        </div>
+                        <div class="application__column col-33">
+                          <div class="form-group js-label-fly">
+                            <input type="text" class="input">
+                            <label for="" class="label label--fly">Укажите тематику сайта</label>
+                          </div>
+                        </div>
+                        <div class="application__column col-33">
+                          <div class="form-group js-label-fly">
+                            <input type="text" class="input">
+                            <label for="" class="label label--fly">Укажите ссылку на текущий сайт</label>
+                          </div>
+                        </div>
+                        <div class="application__column col-33">
+                          <div class="form-group js-label-fly">
+                            <input type="text" class="input">
+                            <label for="" class="label label--fly">Укажите срочность разработки</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="application__row row">
+                        <div class="application__column col-66">
+                          <div class="form-group">
+                            <div class="form-group__title">Добавьте описание проекта</div>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                          </div>
+                        </div>
+                        <div class="application__column col-33">
+                          <div class="application__options">
+                            <a href="#" class="application__option">
+                              <div class="application__option-icon">
+                                <svg class="icon-svg icon-download" width="100%" height="100%">
+                                  <use xlink:href="/img/static/icons.svg#icon-download"></use>
+                                </svg>
+                              </div>Скачать бриф </a>
+                            <label class="application__option">
+                              <div class="application__option-icon">
+                                <svg class="icon-svg icon-clip" width="100%" height="100%">
+                                  <use xlink:href="/img/static/icons.svg#icon-clip"></use>
+                                </svg>
+                              </div>Прикрепить бриф
+                              <input type="file"> </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="application__btn">
+                      <button class="btn btn--primary">Заказать сайт</button>
+                    </div>
+                    <div class="application__conditions">
+                      <div class="conditions">Отправляя данную форму, Вы соглашаетесь с
+                        <a href="#">условиями обработки персональных данных</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+            </div>
+          </div>
+          <div class="incut s-shadow">
+            <div class="container">
+              <div class="incut__inner">
+                <div class="incut__title">У Вас неСтандартный проект?</div>
+                <div class="incut__description">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+                <div>
+                  <a href="#" class="link">Оценить проект</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stages-development">
+            <div class="container container--1460">
+              <h2>Этапы разработки сайта</h2>
+              <div class="stages row">
+                <div class="stage col-33">
+                  <div class="stage__title">Аналитика и
+                    <br>прототипирование</div>
+                  <div class="stage__description">
+                    <p>Соберем всю необходимую информацию о Вашем проекте: о потенциале бизнес-ниши, возможных сценариях развития проекта и уточним целевую аудиторию. Основываясь на этих данных, разработаем структуру сайта, прототипы всех типов страниц и
+                      сделаем точный расчет стоимости последующих этапов.</p>
+                  </div>
+                </div>
+                <div class="stage col-33">
+                  <div class="stage__title">Мощный дизайн</div>
+                  <div class="stage__description">
+                    <p>На базе прототипов разрабатаем индивидуальный дизайн Вашего сайта. Результат: дизайн-макеты всех типов страниц с версиями для мобильных устройств.</p>
+                  </div>
+                  <div class="stage__link">
+                    <a href="#" class="link link--arrow">Посмотреть пример
+                      <svg class="icon-svg icon-arrow-right" width="100%" height="100%">
+                        <use xlink:href="/img/static/icons.svg#icon-arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="stage col-33">
+                  <div class="stage__title">Аккуратная верстка и
+                    <br>разработка</div>
+                  <div class="stage__description">
+                    <p>Сверстаем макеты и интегрируем верстку с системой управления сайтом, разработаем специфичный функционал и обмен данными с Вашим ПО для управления бизнесом.</p>
+                    <p>Мы используем передовые технологии в разработке.</p>
+                  </div>
+                  <div class="stage__link">
+                    <a href="#" class="link link--arrow">Посмотреть результат
+                      <svg class="icon-svg icon-arrow-right" width="100%" height="100%">
+                        <use xlink:href="/img/static/icons.svg#icon-arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="technologies">
+                    <svg class="icon-svg icon-html" width="100%" height="100%">
+                      <use xlink:href="/img/static/icons.svg#icon-html"></use>
+                    </svg>
+                    <svg class="icon-svg icon-css" width="100%" height="100%">
+                      <use xlink:href="/img/static/icons.svg#icon-css"></use>
+                    </svg>
+                    <svg class="icon-svg icon-npm" width="100%" height="100%">
+                      <use xlink:href="/img/static/icons.svg#icon-npm"></use>
+                    </svg>
+                    <svg class="icon-svg icon-gulp" width="100%" height="100%">
+                      <use xlink:href="/img/static/icons.svg#icon-gulp"></use>
+                    </svg>
+                    <svg class="icon-svg icon-sass" width="100%" height="100%">
+                      <use xlink:href="/img/static/icons.svg#icon-sass"></use>
+                    </svg>
+                    <svg class="icon-svg icon-webpack" width="100%" height="100%">
+                      <use xlink:href="/img/static/icons.svg#icon-webpack"></use>
+                    </svg>
+                    <svg class="icon-svg icon-git" width="100%" height="100%">
+                      <use xlink:href="/img/static/icons.svg#icon-git"></use>
+                    </svg>
+                    <svg class="icon-svg icon-php" width="100%" height="100%">
+                      <use xlink:href="/img/static/icons.svg#icon-php"></use>
+                    </svg>
+                    <svg class="icon-svg icon-vue" width="100%" height="100%">
+                      <use xlink:href="/img/static/icons.svg#icon-vue"></use>
+                    </svg>
+                    <svg class="icon-svg icon-laravel" width="100%" height="100%">
+                      <use xlink:href="/img/static/icons.svg#icon-laravel"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="stage col-33">
+                  <div class="stage__title">Запуск проекта
+                    <br>и гарантии</div>
+                  <div class="stage__description">
+                    <p>В течение одного месяца бесплатно исправим ошибки сайта в приоритетном порядке</p>
+                  </div>
+                </div>
+                <div class="stage col-33">
+                  <div class="stage__title">Дальнейшее сопровождениеи
+                    <br>развитие</div>
+                  <div class="stage__description">
+                    <p>Продвинем и/или прорекламируем Ваш проект. Расширим и улучшим сайт под новые вводные Вашего бизнеса.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="s-plus">
+            <div class="container container--1460">
+              <h2>Преимущества работы с нами</h2>
+              <div class="list-counter">
+                <div class="list-counter__item"> ГРАМОТНЫЙ
+                  <br>ПОДХОД </div>
+                <div class="list-counter__item"> ПРОГНОЗИРУЕМЫЙ
+                  <br>РЕЗУЛЬТАТ </div>
+                <div class="list-counter__item"> РАЗУМНЫЕ
+                  <br>ЦЕНЫ </div>
+                <div class="list-counter__item"> НАДЕЖНЫЙ
+                  <br>ПАРТНЕР </div>
+              </div>
+              <div class="plus">
+                <div class="plus__item">
+                  <div class="plus__item-inner">
+                    <div class="plus__icon">
+                      <svg class="icon-svg icon-calculator" width="100%" height="100%">
+                        <use xlink:href="/img/static/icons.svg#icon-calculator"></use>
+                      </svg>
+                    </div>
+                    <div class="plus__title">ПРОЗРАЧНАЯ СИСТЕМА РАСЧЕТА
+                      <br>БЮДЖЕТА</div>
+                    <div class="plus__description">
+                      <p>Мы используем систему расчета стоимости, основанную на подсчете эффективных трудочасов сотрудников. Для проектов с высокой степенью определенности, мы используем фиксированный бюджет.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="plus__item">
+                  <div class="plus__item-inner">
+                    <div class="plus__icon">
+                      <svg class="icon-svg icon-line-chart" width="100%" height="100%">
+                        <use xlink:href="/img/static/icons.svg#icon-line-chart"></use>
+                      </svg>
+                    </div>
+                    <div class="plus__title">ИЗУЧИМ ВАШ БИЗНЕС И ПРЕДЛОЖИМ ОПТИМАЛЬНЫЙ ПЛАН РАБОТ</div>
+                    <div class="plus__description">
+                      <p>Проанализируем конкурентов и клиентский спрос в интернете. Определим задачи первостепенной важности, которые принесут наиболее быстрый результат.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="help">
+            <div class="container container--1460">
+              <div class="help__inner relative-zi-1">
+                <div class="other-service">
+                  <h2>Наши услуги</h2>
+                  <ul class="service-list">
+                    <li>Разработка интернет-магазинов
+                      <a href="#" class="link link--arrow">Подробнее
+                        <svg class="icon-svg icon-arrow-right" width="100%" height="100%">
+                          <use xlink:href="/img/static/icons.svg#icon-arrow-right"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>Сопровождение сайтов
+                      <a href="#" class="link link--arrow">Подробнее
+                        <svg class="icon-svg icon-arrow-right" width="100%" height="100%">
+                          <use xlink:href="/img/static/icons.svg#icon-arrow-right"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>Продвижение сайтов
+                      <a href="#" class="link link--arrow">Подробнее
+                        <svg class="icon-svg icon-arrow-right" width="100%" height="100%">
+                          <use xlink:href="/img/static/icons.svg#icon-arrow-right"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="question left-shadow">
+                  <div class="question__inner decor-blur">
+                    <h2>Какую задачу
+                      <br>будем решать?</h2>
+                    <div class="question__description">Опишите вашу задачу и мы подготовим для вас ее решение</div>
+                    <div class="question__group">
+                      <div class="form-group js-label-fly">
+                        <input type="text" class="input">
+                        <label for="" class="label label--fly">Имя*</label>
+                      </div>
+                      <div class="form-group js-label-fly">
+                        <input type="text" class="input">
+                        <label for="" class="label label--fly">Телефон*</label>
+                      </div>
+                      <div class="form-group js-label-fly">
+                        <input type="text" class="input">
+                        <label for="" class="label label--fly">Вопрос</label>
+                      </div>
+                    </div>
+                    <div class="question__btn">
+                      <button class="btn btn--primary">Отправить</button>
+                    </div>
+                    <div class="question__conditions">
+                      <div class="conditions">Отправляя данную форму, Вы соглашаетесь с
+                        <a href="#">условиями обработки персональных данных</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-footer">
+        <div class="container">
+          <div class="p-footer__row">
+            <div class="p-footer__column">
+              <a href="/homepage.html" class="p-footer__logo">
+                <svg class="icon-svg icon-logo" width="100%" height="100%">
+                  <use xlink:href="/img/static/icons.svg#icon-logo"></use>
+                </svg>
+              </a>
+              <div class="p-footer__copyrighted copyrighted">© 2015 - 2018.
+                <span>Не является публичной офертой.</span>
+              </div>
+            </div>
+            <div class="p-footer__column p-footer__contacts">
+              <div class="contact">
+                <p class="contact__title">
+                  <a href="tel: 8 (3532) 92-92-85">8 (3532) 92-92-85</a>
+                </p>
+                <button type="button" class="js-popup">Заказать звонок</button>
+              </div>
+              <div class="contact">
+                <p class="contact__title">г.Оренбург, ул.Мира, д.20а, офис 8</p>
+                <button type="button" class="js-map">Показать на карте</button>
+              </div>
+              <div class="contact">
+                <p class="contact__title">
+                  <a href="order@true-studio.ru">order@true-studio.ru</a>
+                </p>
+                <div class="social-list">
+                  <a href="#" class="social">
+                    <svg class="icon-svg icon-vk" width="100%" height="100%">
+                      <use xlink:href="/img/static/icons.svg#icon-vk"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="social">
+                    <svg class="icon-svg icon-instagram" width="100%" height="100%">
+                      <use xlink:href="/img/static/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-map">
+      <div id="map" class="map" data-geo='[{"lat":"51.781747", "lng":"55.171531"}]'></div>
+      <button type="button" class="popup-map__close js-map-close"></button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="libs/mfp/jquery.magnific-popup.min.js"></script>
+    <script src="/libs/svg4everybody.min.js"></script>
+    <script>
+      svg4everybody();
+    </script>
+    <script src="js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPbIVJOBdITUY6ZovHUagLoETNUFcYjIo&callback=initMap" async defer></script>
+  </body>
+</html>

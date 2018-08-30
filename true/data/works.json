@@ -1,0 +1,18 @@
+[
+	{
+		"img": "/img/dynamic/works/A-rielt_ur_1.png",
+		"img2": "/img/dynamic/works/A-rielt_ur_2.png",
+		"name": "Рынок <br>«Петровский»",
+		"description": "Имиджевый сайт для обновленного рынка «Петровский» в Оренбурге.",
+		"href": "#",
+		"colorText": "black"
+	},
+	{
+		"img": "/img/dynamic/works/Estheticdent_1.png",
+		"img2": "/img/dynamic/works/Estheticdent_2.png",
+		"name": "Рынок <br>«Петровский»",
+		"description": "Имиджевый сайт для обновленного рынка «Петровский» в Оренбурге.",
+		"href": "#",
+		"colorText": "black"
+	}
+]

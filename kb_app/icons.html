@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&amp;subset=cyrillic"> </head>
+  <body>
+    <div class="p-wrapper">
+      <div class="p-header">
+        <div class="container">
+          <div class="p-header__row">
+            <div class="p-header__logo">
+              <a href="/index.html" class="logo">
+                <img src="/img/static/logo-white.svg" alt="#"> </a>
+            </div>
+            <a href="tel:8 (495) 721-24-39" class="p-header__phone">8 (495) 721-24-39</a>
+          </div>
+        </div>
+      </div>
+      <div class="p-content ">
+        <svg class="icon-svg icon-dev" width="100%" height="100%">
+          <use xlink:href="/img/static/icons.svg#icon-dev"></use>
+        </svg>
+        <svg class="icon-svg icon-play" width="100%" height="100%">
+          <use xlink:href="/img/static/icons.svg#icon-play"></use>
+        </svg>
+      </div>
+      <div class="p-footer">
+        <div class="container">
+          <div class="p-footer__row">
+            <div class="p-footer__column">
+              <div class="p-footer__copyright">
+                <p>© 2018 КБ Сервис</p>
+              </div>
+              <div class="p-footer__link">
+                <a href="/confidentiality.html">Политика конфиденциальности</a>
+              </div>
+            </div>
+            <div class="p-footer__column">
+              <div class="p-footer__dev">
+                <svg class="icon-svg icon-dev" width="100%" height="100%">
+                  <use xlink:href="/img/static/icons.svg#icon-dev"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup mfp-hide success" style="background-image: url('/img/static/popup/bg.jpg');">
+      <div class="popup__main">
+        <div class="feedback">
+          <form>
+            <div class="feedback__title">Есть вопросы? Оставьте заявку</div>
+            <div class="feedback__fields">
+              <div class="form-group js-label-fly error">
+                <input type="text" class="input">
+                <label class="label label--fly">Имя</label>
+                <span class="error-message">Введите имя</span>
+              </div>
+              <div class="form-group js-label-fly">
+                <input type="text" class="input">
+                <label class="label label--fly">Телефон</label>
+              </div>
+            </div>
+            <div class="feedback__foot">
+              <div class="feedback__btn">
+                <button class="btn btn--primary btn--rounded">Отправить</button>
+              </div>
+              <p>Отправляя данную форму, Вы соглашаетесь с
+                <a href="/confidentiality.html">условиями обработки персональных данных</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="popup__success" style="background-image: url('/img/static/popup/bg.jpg');">
+        <div class="popup__success-title">Ваша заявка
+          <span>отправлена</span>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="libs/mfp/jquery.magnific-popup.min.js"></script>
+    <script src="libs/svg4everybody.min.js"></script>
+    <script>
+      svg4everybody();
+    </script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
