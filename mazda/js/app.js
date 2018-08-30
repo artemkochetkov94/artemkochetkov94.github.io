@@ -698,7 +698,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 					closeMarkup:
 					'<button class="popup-close mfp-close" type="button" title="%title%">'
 						+ '	<svg class="icon-svg icon-close" width="100%" height="100%">'
-						+ '		<use xlink:href="/img/static/icons.svg#icon-close"></use>'
+						+ '		<use xlink:href="img/static/icons.svg#icon-close"></use>'
 						+ '	</svg>'
 						+ '</button>',
 					tClose: 'Закрыть'
@@ -728,7 +728,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				closeMarkup:
 					'<button class="popup-close mfp-close" type="button" title="%title%">'
 					+ '	<svg class="icon-svg icon-close" width="100%" height="100%">'
-					+ '		<use xlink:href="/img/static/icons.svg#icon-close"></use>'
+					+ '		<use xlink:href="img/static/icons.svg#icon-close"></use>'
 					+ '	</svg>'
 					+ '</button>',
 				tClose: 'Закрыть',
@@ -879,7 +879,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	            // balloonContent: 'Это красивая метка'
 	        }, {
 	            iconLayout: 'default#image',
-	            iconImageHref: '../img/static/icons/icon-map.svg',
+	            iconImageHref: '..img/static/icons/icon-map.svg',
 	            iconImageSize: [56, 65],
 	            iconImageOffset: [-25, -65]
 	        });
@@ -1060,7 +1060,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 						closeMarkup:
 							'<button class="popup-close mfp-close" type="button" title="%title%">'
 							+ '	<svg class="icon-svg icon-close" width="100%" height="100%">'
-							+ '		<use xlink:href="/img/static/icons.svg#icon-close"></use>'
+							+ '		<use xlink:href="img/static/icons.svg#icon-close"></use>'
 							+ '	</svg>'
 							+ '</button>',
 						tClose: 'Закрыть'

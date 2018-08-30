@@ -671,7 +671,7 @@ b {
 
 .phone-button {
   background-color: #3993ec;
-  background-image: url("../img/phone-button.svg");
+  background-image: url("..img/phone-button.svg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 50% 50%;
@@ -1161,7 +1161,7 @@ b {
   top: 0;
   left: 0;
   width: 100%;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("..img/header-bg.jpg");
   background-repeat: repeat-x;
   -webkit-background-size: cover;
   background-size: cover;
@@ -1169,12 +1169,12 @@ b {
   .page-header--transparent {
     background: transparent; }
     .page-header--transparent.menu-open {
-      background-image: url("../img/header-bg.jpg");
+      background-image: url("..img/header-bg.jpg");
       background-repeat: repeat-x;
       -webkit-background-size: cover;
       background-size: cover; }
     .page-header--transparent.page-header--fixed {
-      background-image: url("../img/header-bg.jpg");
+      background-image: url("..img/header-bg.jpg");
       background-repeat: repeat-x;
       -webkit-background-size: cover;
       background-size: cover; }
@@ -1490,10 +1490,10 @@ b {
 
 .s-grid-media {
   background-color: #f6fcff;
-  background-image: url("../img/index/bg-pattern.jpg"); }
+  background-image: url("..img/index/bg-pattern.jpg"); }
 
 .s-contact-us {
-  background-image: url("../img/contact/contact-us-bg.jpg");
+  background-image: url("..img/contact/contact-us-bg.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -1562,7 +1562,7 @@ b {
   height: 100%;
   z-index: -1;
   background-color: #8a3433;
-  background-image: url("../img/index/hero-bg.jpg");
+  background-image: url("..img/index/hero-bg.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -1581,7 +1581,7 @@ b {
     transform: scale(1.1); }
 
 .logo-bg {
-  background: url("../img/index/logo-bg.png");
+  background: url("..img/index/logo-bg.png");
   background-repeat: no-repeat;
   -webkit-background-size: auto 1400px;
   background-size: auto 1400px;
@@ -1705,7 +1705,7 @@ b {
   margin: 0 auto; }
 
 .mentrosip-and-team {
-  background-image: url("../img/index/team-bg.png");
+  background-image: url("..img/index/team-bg.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -2128,7 +2128,7 @@ b {
   height: 100%; }
 
 .mentorship {
-  background-image: url("../img/services/mentorship-bg.png");
+  background-image: url("..img/services/mentorship-bg.png");
   background-repeat: no-repeat;
   background-position: right; }
   @media (max-width: 1400px) {
@@ -2158,7 +2158,7 @@ b {
 .sales-oport__inner {
   position: relative;
   padding-bottom: 70px;
-  background: url("../img/job-seekers/sales-oport-bg.png");
+  background: url("..img/job-seekers/sales-oport-bg.png");
   background-repeat: no-repeat;
   background-position: right bottom; }
   @media (max-width: 1200px) {
@@ -2270,7 +2270,7 @@ b {
   margin-top: auto; }
 
 .s-hero {
-  background: url("../img/sales-o/s-hero-bg2.jpg");
+  background: url("..img/sales-o/s-hero-bg2.jpg");
   background-color: #8a3433;
   background-repeat: no-repeat;
   -webkit-background-size: cover;

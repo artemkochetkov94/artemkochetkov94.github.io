@@ -298,7 +298,7 @@ function worksLoad() {
 			item.classList.add('works__item');
 			item.classList.add('work');
 			var modClass = items[i].colorText ? 'work__info--' + items[i].colorText : '';
-			item.innerHTML = '\n\t\t\t<img src="' + items[i].img + '" alt="#">\n\t\t\t<img src="' + items[i].img2 + '" alt="#">\n\t\t\t<a href="' + items[i].href + '" class="work__info ' + modClass + '">\n\t\t\t  <div class="work__info-inner">\n\t\t\t    <div class="work__name">' + items[i].name + '</div>\n\t\t\t\t<div class="work__description">' + items[i].description + '</div>\n\t\t\t\t<div class="work__link">\n\t\t\t\t  <span class="link link--arrow">\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435 \n\t\t\t\t    <svg class="icon-svg icon-arrow-right" width="100%" height="100%">\n\t\t\t\t\t  <use xlink:href="/img/static/icons.svg#icon-arrow-right"></use>\n\t\t\t\t\t</svg>\n\t\t\t\t  </span>\n\t\t\t\t</div>\n\t\t\t  </div>\n\t\t\t</a>';
+			item.innerHTML = '\n\t\t\t<img src="' + items[i].img + '" alt="#">\n\t\t\t<img src="' + items[i].img2 + '" alt="#">\n\t\t\t<a href="' + items[i].href + '" class="work__info ' + modClass + '">\n\t\t\t  <div class="work__info-inner">\n\t\t\t    <div class="work__name">' + items[i].name + '</div>\n\t\t\t\t<div class="work__description">' + items[i].description + '</div>\n\t\t\t\t<div class="work__link">\n\t\t\t\t  <span class="link link--arrow">\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435 \n\t\t\t\t    <svg class="icon-svg icon-arrow-right" width="100%" height="100%">\n\t\t\t\t\t  <use xlink:href="img/static/icons.svg#icon-arrow-right"></use>\n\t\t\t\t\t</svg>\n\t\t\t\t  </span>\n\t\t\t\t</div>\n\t\t\t  </div>\n\t\t\t</a>';
 
 			fragment.appendChild(item);
 		}
@@ -572,7 +572,7 @@ function popup() {
 			},
 			type: 'inline',
 			fixedContentPos: true,
-			closeMarkup: '<button class="popup-close mfp-close" type="button" title="%title%">\n\t\t\t\t\t<svg class="icon-svg icon-cross" width="100%" height="100%">\n\t\t\t\t\t\t<use xlink:href="/img/static/icons.svg#icon-cross"></use>\n\t\t\t\t\t</svg>\n\t\t\t\t</button>',
+			closeMarkup: '<button class="popup-close mfp-close" type="button" title="%title%">\n\t\t\t\t\t<svg class="icon-svg icon-cross" width="100%" height="100%">\n\t\t\t\t\t\t<use xlink:href="img/static/icons.svg#icon-cross"></use>\n\t\t\t\t\t</svg>\n\t\t\t\t</button>',
 			tClose: 'Закрыть'
 		}, 0);
 	});

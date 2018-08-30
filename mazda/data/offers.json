@@ -1,11 +1,11 @@
 [
 	{
-		"img": "/img/dynamic/special-offers/1.jpg",
+		"img": "img/dynamic/special-offers/1.jpg",
 		"title": "Название акции",
 		"description": "Предложение действует до 30.04.2018"
 	},
 	{
-		"img": "/img/dynamic/special-offers/1.jpg",
+		"img": "img/dynamic/special-offers/1.jpg",
 		"title": "Название акции",
 		"description": "Предложение действует до 30.04.2018"
 	}
