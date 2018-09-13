@@ -626,9 +626,11 @@ function presentation() {
 	var blocked = false;
 
 	$(".p-content").on("touchstart", function (e) {
+		console.log('touchstart');
 		var startingY = e.originalEvent.touches[0].pageY;
 
 		$(".p-content").on("touchmove", (0, _underscore.throttle)(function (e) {
+			console.log('touchmove');
 			if (e.target.closest('.js-map')) return;
 
 			if (!blocked) {
