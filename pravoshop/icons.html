@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="css/main.css"> </head>
+
+  <body>
+    <div class="perspective js-perspective">
+      <nav class="nav js-nav"> <a href="#" class="js-nav-item active" data-id="1">Главная</a> <a href="#" class="js-nav-item" data-id="2">Услуги</a> <a href="#" class="js-nav-item" data-id="3">Клиенты</a> <a href="#" class="js-nav-item" data-id="4">Контакты</a> <a href="#" class="js-nav-item"
+          data-id="5">Заказать <br>услуги</a> </nav>
+      <div class="p-wrapper">
+        <header class="p-header">
+          <div class="container container--fluid">
+            <div class="p-header__inner">
+              <div class="logo"> <img src="img/static/logo.svg" alt="pravohsop"> </div>
+              <div class="localization">
+                <div class="localization__item active">ru</div>
+                <div class="localization__item">en</div>
+              </div> <button type="button" class="js-menu-btn menu-btn">
+        <span class="menu-btn__part menu-btn__part-1"></span>
+        <span class="menu-btn__part menu-btn__part-2"></span>
+        <span class="menu-btn__part menu-btn__part-3"></span>
+      </button> </div>
+          </div>
+        </header>
+        <div class="p-content"> </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="libs/slick.min.js"></script>
+    <script src="/libs/svg4everybody.min.js"></script>
+    <script>
+      svg4everybody();
+
+    </script>
+    <script src="js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPbIVJOBdITUY6ZovHUagLoETNUFcYjIo&callback=initMap" async defer></script>
+  </body>
+
+</html>
