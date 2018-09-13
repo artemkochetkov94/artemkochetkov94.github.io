@@ -607,7 +607,13 @@ function presentation() {
 
 	window.addEventListener(mousewheelevt, (0, _underscore.throttle)(function (e) {
 		console.log('main event mousewheel');
+
 		e.preventDefault();
+
+		var i = e.wheelDelta ? -e.wheelDelta : 20 * e.detail;
+
+		console.log(i);
+
 		if (e.target.closest('.js-map')) return;
 
 		if (blocked) return;
@@ -637,10 +643,7 @@ function presentation() {
 	$(".p-content").on("touchstart", function (e) {
 		var startingY = e.originalEvent.touches[0].pageY;
 
-		console.log('touchstart');
-
 		$(".p-content").on("touchmove", (0, _underscore.throttle)(function (e) {
-			console.log('touchmove');
 
 			if (e.target.closest('.js-map')) return;
 
