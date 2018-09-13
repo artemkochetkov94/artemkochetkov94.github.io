@@ -603,9 +603,14 @@ function presentation() {
 		closeMenu(e);
 	});
 
+	var blocked = false;
+
 	window.addEventListener(mousewheelevt, (0, _underscore.throttle)(function (e) {
 		console.log('main event mousewheel');
+		e.preventDefault();
 		if (e.target.closest('.js-map')) return;
+
+		if (blocked) return;
 
 		var delta = e.detail * -1 || e.wheelDelta;
 
@@ -622,9 +627,12 @@ function presentation() {
 			}
 			return toggleSlide(currentSlide, currentSlide + 1, 'next');
 		}
-	}, frequency));
 
-	var blocked = false;
+		blocked = true;
+		setTimeout(function () {
+			blocked = false;
+		}, frequency);
+	}, frequency));
 
 	$(".p-content").on("touchstart", function (e) {
 		var startingY = e.originalEvent.touches[0].pageY;
