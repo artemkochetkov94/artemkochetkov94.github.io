@@ -1325,15 +1325,22 @@ b {
 
   .contacts {
     max-width: 1000px;
+    padding: 25px 40px;
+  }
+
+  .contacts__text p {
+    margin-bottom: 50px;
+  }
+
+  .contact + .contact {
+    margin-top: 30px;
   }
 
   .contacts__map {
     left: 480px;
     width: 460px;
   }
-}
 
-@media (max-width: 1200px) {
   .order__radio label span {
     padding: 15px 18px;
   }
@@ -1426,10 +1433,6 @@ b {
     right: 90px;
   }
 
-  .contacts {
-    padding: 25px 40px;
-  }
-
   .contacts__text p {
     margin-bottom: 35px;
   }
@@ -1440,10 +1443,6 @@ b {
 
   .contacts__button {
     margin-bottom: 40px;
-  }
-
-  .contact + .contact {
-    margin-top: 30px;
   }
 
   .contacts__map {

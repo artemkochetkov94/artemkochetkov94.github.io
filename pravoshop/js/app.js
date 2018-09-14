@@ -221,7 +221,7 @@ exports.default = function () {
 		slidesToScroll: 1,
 		infinite: false,
 		responsive: [{
-			breakpoint: 1150,
+			breakpoint: 1023,
 			settings: {
 				slidesToShow: 5,
 				slidesToScroll: 1
@@ -543,7 +543,7 @@ function presentation() {
 	var currentSlide = 1,
 	    slideCount = sections.length;
 
-	var frequency = 700;
+	var frequency = 800;
 
 	function toggleSlide(prevId, nextId, classPrev) {
 		Array.prototype.forEach.call(navItems, function (item) {
@@ -603,54 +603,66 @@ function presentation() {
 		closeMenu(e);
 	});
 
+	var blocked = false;
+
 	window.addEventListener(mousewheelevt, (0, _underscore.throttle)(function (e) {
 		if (e.target.closest('.js-map')) return;
 
-		var delta = e.detail * -1 || e.wheelDelta;
+		var delta = e.wheelDelta ? -e.wheelDelta : e.detail * 20;
 
-		if (delta >= 0) {
-			// up
-			if (currentSlide == 1) {
-				return toggleSlide(currentSlide, slideCount, 'prev');
-			}
-			return toggleSlide(currentSlide, currentSlide - 1, 'prev');
-		} else {
+		// let delta = (e.detail * -1) || e.wheelDelta;
+
+		if (delta > 50 && !blocked) {
 			// down
 			if (currentSlide == 5) {
-				return toggleSlide(currentSlide, 1, 'next');
+				toggleSlide(currentSlide, 1, 'next');
+			} else {
+				toggleSlide(currentSlide, currentSlide + 1, 'next');
 			}
-			return toggleSlide(currentSlide, currentSlide + 1, 'next');
-		}
-	}, frequency));
 
-	var blocked = false;
+			blocked = true;
+			setTimeout(function () {
+				blocked = false;
+			}, frequency);
+		} else if (delta < -50 && !blocked) {
+			// up
+			if (currentSlide == 1) {
+				toggleSlide(currentSlide, slideCount, 'prev');
+			} else {
+				toggleSlide(currentSlide, currentSlide - 1, 'prev');
+			}
+
+			blocked = true;
+			setTimeout(function () {
+				blocked = false;
+			}, frequency);
+		}
+	}, 100));
 
 	$(".p-content").on("touchstart", function (e) {
-		console.log('touchstart');
 		var startingY = e.originalEvent.touches[0].pageY;
 
 		$(".p-content").on("touchmove", (0, _underscore.throttle)(function (e) {
-			console.log('touchmove');
 			if (e.target.closest('.js-map')) return;
 
-			if (!blocked) {
-				var currentY = e.originalEvent.touches[0].pageY;
-				var delta = currentY - startingY;
+			if (blocked) return;
 
-				if (delta >= 0) {
-					// up
-					if (currentSlide == 1) {
-						toggleSlide(currentSlide, slideCount, 'prev');
-					} else {
-						toggleSlide(currentSlide, currentSlide - 1, 'prev');
-					}
+			var currentY = e.originalEvent.touches[0].pageY;
+			var delta = currentY - startingY;
+
+			if (delta >= 0) {
+				// up
+				if (currentSlide == 1) {
+					toggleSlide(currentSlide, slideCount, 'prev');
 				} else {
-					// down
-					if (currentSlide == 5) {
-						toggleSlide(currentSlide, 1, 'next');
-					} else {
-						toggleSlide(currentSlide, currentSlide + 1, 'next');
-					}
+					toggleSlide(currentSlide, currentSlide - 1, 'prev');
+				}
+			} else {
+				// down
+				if (currentSlide == 5) {
+					toggleSlide(currentSlide, 1, 'next');
+				} else {
+					toggleSlide(currentSlide, currentSlide + 1, 'next');
 				}
 			}
 
