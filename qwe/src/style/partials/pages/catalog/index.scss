@@ -1,0 +1,21 @@
+.catalog {
+	// display: none;
+	margin-bottom: 100px;
+}
+
+.catalog__inner {
+	display: flex;
+}
+
+.catalog__filters {
+	width: 300px;
+}
+
+.catalog__main {
+	width: calc(100% - 680px);
+	margin: 0 auto;
+}
+
+.catalog__sidebar {
+	width: 300px;
+}

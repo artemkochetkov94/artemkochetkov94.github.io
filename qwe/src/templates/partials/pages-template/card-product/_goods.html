@@ -1,0 +1,56 @@
+{% import '../../_mixins.html' as mixins %}
+
+<div class="goods">
+	<div class="goods-gallery">
+		<div class="goods-gallery__main js-goods-carousel">
+			{% for i in range(1, 9) %}
+				<div class="goods-gallery__main-item">
+					<img src="https://placehold.it/607x495?text={{ i }}" alt="#">
+				</div>
+			{% endfor %}
+		</div>
+		<div class="goods-gallery__thumbs js-goods-carousel-thumbs">
+			{% for i in range(1, 9) %}
+				<div class="goods-gallery__thumbs-item">
+					<img src="https://placehold.it/65x65?text={{ i }}" alt="#">
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+
+	<div class="goods-info">
+		<div class="goods-info__header">
+			<div class="goods-info__price">
+				<span class="goods-info__price-old">1 230 руб.</span>
+				<span>1 090 <span>руб.</span></span>
+			</div>
+
+			<div class="goods-info__button">
+				<button type="button" class="btn btn--primary">В корзину</button>
+				<div class="goods-info__note">
+					<span>+ 100</span> Бонусных баллов
+					<div class="goods-info__hint">
+						{% include 'partials/blocks/_hint.html' %}
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="goods-info__delivery">
+			<div class="goods-info__delivery-title">
+				{{ mixins.icon('icon-car-2') }}
+				<span>Доставка</span>
+			</div>
+			<div class="goods-info__delivery-list">
+				<div><span>Самовывоз</span> <b>Сегодня</b></div>
+				<div><span>Москва и МО</span> <b>Завтра</b></div>
+				<div><span>Россия</span> <b>12.02.2018</b></div>
+			</div>
+		</div>
+
+		<div class="goods-info__guarantee">
+			{{ mixins.icon('icon-certificate') }}
+			<p>Гарантия 12 мес. В сервисном центре производителя при предъявлении гарантийного талона</p>
+		</div>
+	</div>
+</div>

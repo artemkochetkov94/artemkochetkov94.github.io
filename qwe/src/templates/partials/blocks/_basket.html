@@ -1,0 +1,89 @@
+<div class="basket">
+	<form>
+		<div class="basket__top">
+			<div class="basket__title">
+				<span>Корзина</span>
+				{{ mixins.icon('icon-cart') }}
+			</div>
+			<div class="basket__count">
+				<span class="basket__count-inner">В корзине <span>2</span> шт.</span>
+				<button type="button" class="basket__clear">Очистить</button>
+			</div>
+		</div>
+
+		<div class="basket__products">
+			<div class="basket__product">
+				<div class="basket__product-name">Вентилятор настольный First FA-5550-BA</div>
+				<div class="basket__product-row">
+					<div class="basket__product-counter">
+						<div class="counter js-counter">
+							<button type="button" class="counter__action js-counter-action" data-action="minus">-</button>
+							<div class="counter__input">
+								<input type="text" value="1">
+							</div>
+							<button type="button" class="counter__action js-counter-action" data-action="plus">+</button>
+						</div>
+					</div>
+					<div class="basket__product-price">2 180 руб.</div>
+					<button type="button" class="basket__product-remove btn-cross"></button>
+				</div>
+			</div>
+		</div>
+
+		<div class="basket__delivery">
+			<div class="basket__delivery-title">Доставка товаров</div>
+			<div class="basket__select-outer">
+				<div class="basket__select-title">Регион</div>
+				<div class="basket__select">
+					<div class="select-outer">
+						<select id="city" class="js-select">
+							{% for i in range(0, 15) %}
+								<option>Москва и Моск. обл.</option>
+							{% endfor %}
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="basket__select-outer">
+				<div class="basket__select-title">Доставка</div>
+				<div class="basket__select">
+					<div class="select-outer">
+						<select id="delivery" class="js-select">
+							{% for i in range(0, 15) %}
+								<option>Курьером лично в рук</option>
+							{% endfor %}
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="basket__select-outer">
+				<div class="basket__select-title">Оплата</div>
+				<div class="basket__select">
+					<div class="select-outer">
+						<select id="payment" class="js-select">
+							{% for i in range(0, 15) %}
+								<option>Наличные курьеру</option>
+							{% endfor %}
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="basket__delivery-price">Стоимость доставки <span>2 180 руб</span></div>
+		</div>
+
+		<div class="basket__bottom">
+			<div class="basket__total">Итого: <span>1 480</span> руб</div>
+			<button type="submit" class="basket__btn btn btn--transparent">Оформить заказ</button>
+			<div class="basket__bonus">
+				За данный заказ Вы получите
+				<b>+ 100</b> <span>Бонусных баллов</span>
+				<div class="basket__bonus-hint">
+					{% include 'partials/blocks/_hint.html' %}
+				</div>
+			</div>
+		</div>
+	</form>
+</div>

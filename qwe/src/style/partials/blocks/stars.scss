@@ -1,0 +1,26 @@
+.stars {
+	display: flex;
+}
+
+.star {
+	&.active {
+		& ~ .star {
+			.icon-star {
+				fill: #ededed;
+			}
+		}
+	}
+
+	&:last-child {
+		.icon-star {
+			margin-right: 0;
+		}
+	}
+
+	.icon-star {
+		font-size: 15px;
+		fill: #f8c425;
+
+		margin-right: 4px;
+	}
+}

@@ -1,0 +1,145 @@
+{% set footerMenu = [
+	{
+		title: 'ИКСКОМ ДОМ',
+		links: [
+			{
+				link: 'О компании'
+			},
+			{
+				link: 'Партнеры'
+			},
+			{
+				link: 'Контактная информация'
+			},
+			{
+				link: 'Вакансии'
+			}
+		]
+	},
+	{
+		title: 'Интернет-магазин',
+		links: [
+			{
+				link: 'Каталог товаров'
+			},
+			{
+				link: 'Методы оплаты'
+			},
+			{
+				link: 'Гарантия на товары'
+			},
+			{
+				link: 'Доставка (Москва, МО, Регионы)'
+			}
+		]
+	},
+	{
+		title: 'Услуги',
+		links: [
+			{
+				link: 'установка сплит-систем'
+			},
+			{
+				link: 'техническая поддержка'
+			},
+			{
+				link: 'Модернизация'
+			},
+			{
+				link: 'Тендерный отдел'
+			}
+		]
+	},
+	{
+		title: 'контакты',
+		links: [
+			{
+				link: 'М. Водный стадион'
+			},
+			{
+				link: 'Оформление заказа'
+			},
+			{
+				link: 'Региональная доставка'
+			},
+			{
+				link: 'Прием рекламации'
+			}
+		]
+	}
+] %}
+
+<footer class="footer">
+	<div class="footer__top">
+		<div class="container">
+			<div class="footer__top-inner">
+				{% for menuGroup in footerMenu %}
+					<div class="footer__group">
+						<div class="footer__group-title footer__title"><a href="#">{{ menuGroup.title }}</a></div>
+						<div class="footer__menu-list">
+							{% for links in menuGroup.links %}
+								<a href="#">{{ links.link }}</a>
+							{% endfor %}
+						</div>
+					</div>
+				{% endfor %}
+
+				<div class="footer__group">
+					<div class="footer__group-title">Принимаем к оплате</div>
+					<div class="footer__payments">
+						<img src="img/static/payments.png" alt="#">
+					</div>
+				</div>
+			</div>
+
+			<div class="footer__top-hide">
+				<div class="app">
+					<a href="#" class="app__item">
+						<img src="img/static/app-apple-store.jpg" alt="#">
+					</a>
+					<a href="#" class="app__item">
+						<img src="img/static/app-google-play.jpg" alt="#">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer__bottom">
+		<div class="container">
+			<div class="footer__bottom-inner">
+				<div class="footer__company">
+					<div class="footer__copyright">© «Xcom-shop»</div>
+					<a href="#">Группа компаний «X-COM»</a>
+				</div>
+
+				<div class="footer__links-outer">
+					<div class="footer__app">
+						<div class="app">
+							<a href="#" class="app__item">
+								<img src="img/static/app-apple-store.jpg" alt="#">
+							</a>
+							<a href="#" class="app__item">
+								<img src="img/static/app-google-play.jpg" alt="#">
+							</a>
+						</div>
+					</div>
+
+					<div class="footer__links">
+						<a class="footer__link">
+							<img src="img/static/raiting-1.jpg" alt="#">
+						</a>
+						<a class="footer__link">
+							<img src="img/static/raiting-2.jpg" alt="#">
+						</a>
+					</div>
+				</div>
+
+				<div class="footer__socials">
+					<div class="footer__socials-title">Мы в соц.сетях:</div>
+					{% include 'partials/blocks/_socials.html' %}
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

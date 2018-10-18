@@ -1,0 +1,45 @@
+.popup-login {
+	max-width: 480px;
+
+	margin: 0 auto;
+
+	background-color: #fff;
+}
+
+.login {
+	max-width: 280px;
+	margin: 0 auto;
+}
+
+.login__field {
+	margin-bottom: 9px;
+}
+
+.login__btns {
+	margin-bottom: 20px;
+	padding-top: 10px;
+}
+
+.login__btn {
+	margin-bottom: 10px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.login__bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.remind-password {
+	font-size: 13px;
+
+	color: $color-blue;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

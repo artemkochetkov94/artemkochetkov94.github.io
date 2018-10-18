@@ -1,0 +1,24 @@
+.hint {
+	display: inline-block;
+}
+
+.hint__btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 18px;
+	height: 18px;
+
+	font-size: 12px;
+	font-weight: 700;
+
+	border: 1px solid $color-blue;
+	border-radius: 50%;
+
+	color: $color-blue;
+}
+
+.hint__text {
+	display: none;
+}

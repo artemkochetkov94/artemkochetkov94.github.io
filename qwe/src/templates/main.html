@@ -1,0 +1,45 @@
+{% set title = 'main' %}
+
+{% set page = 'main' %}
+
+{% extends 'partials/_base.html' %}
+
+{% block content %}
+	{% include 'partials/layouts/_breadcrumbs.html' %}
+	<div class="page-header">
+		<div class="container">
+			<div class="h1">Вентиляторы</div>
+		</div>
+	</div>
+
+	<div class="catalog">
+		<div class="container">
+			<div class="catalog__inner">
+				<div class="catalog__filters">
+					{% include 'partials/blocks/_filters.html' %}
+				</div>
+
+				<div class="catalog__main catalog-list">
+					{% include 'partials/blocks/_filter-panel.html' %}
+					{% include 'partials/layouts/_products.html' %}
+					{% include 'partials/blocks/_pagination.html' %}
+				</div>
+
+				<div class="catalog__sidebar">
+					{% include 'partials/blocks/_basket.html' %}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content-block">
+		<div class="container">
+			<div class="content-block__inner">
+				<p>First FA-5550-BA сертифицирован для продажи в России. Изображения товара, включая цвет, могут отличаться от реального внешнего вида. Комплектация также может быть изменена производителем без предварительного уведомления. Данное описание не является публичной офертой.</p>
+				<div class="xs-hide">
+					<p>Вентилятор настольный First FA-5550-BA – цена 1090 руб., фото, технические характеристики, условия доставки по Москве и России. Для того, чтобы купить вентилятор настольный First FA-5550-BA в интернет-магазине Xcom-dom.ru, достаточно заполнить форму онлайн заказа или позвонить по телефонам: +7 (495) 357-05-70, +7 (800) 200-00-69.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

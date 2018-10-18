@@ -1,0 +1,192 @@
+.basket {
+	width: 300px;
+	border: 1px solid #ededed;
+}
+
+.basket__top,
+.basket__products,
+.basket__delivery,
+.basket__bottom {
+	padding: 0 30px;
+}
+
+.basket__top {
+	padding-top: 21px;
+	padding-bottom: 18px;
+	border-bottom: 1px solid #ededed;
+}
+
+.basket__title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-bottom: 6px;
+
+	font-size: 20px;
+	font-weight: 500;
+
+	color: $color-primary;
+
+	.icon-cart {
+		font-size: 19px;
+	}
+}
+
+.basket__count {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	font-size: 14px;
+}
+
+.basket__count-inner {
+	color: #161515;
+}
+
+.basket__clear {
+	border-bottom: 1px dashed;
+
+	color: #696969;
+
+	cursor: pointer;
+
+	&:hover {
+		color: $color-red;
+	}
+}
+
+
+
+
+
+.basket__products {
+	padding-top: 15px;
+	padding-bottom: 22px;
+	border-bottom: 1px solid #ededed;
+}
+
+// .basket__product {}
+
+.basket__product-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.basket__product-name {
+	margin-bottom: 14px;
+
+	font-size: 14px;
+
+	color: $color-blue;
+}
+
+// .basket__product-counter {}
+
+.basket__product-price {
+	font-size: 14px;
+	font-weight: 700;
+	color: #161515;
+}
+
+// .basket__product-remove {}
+
+
+
+
+
+.basket__delivery {
+	padding-top: 24px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #ededed;
+	background-color: #f7f7f7;
+}
+
+.basket__delivery-title {
+	margin-bottom: 12px;
+
+	font-size: 14px;
+	font-weight: 500;
+
+	color: #161515;
+}
+
+.basket__select-outer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-bottom: 10px;
+}
+
+.basket__select {
+	width: 161px;
+}
+
+.basket__select-title {
+	font-size: 12px;
+	color: #161515;
+}
+
+.basket__delivery-price {
+	padding-top: 4px;
+
+	font-size: 12px;
+
+	color: #161515;
+
+	span {
+		margin-left: 19px;
+		font-size: 14px;
+		font-weight: 700;
+	}
+}
+
+
+
+
+
+.basket__bottom {
+	padding-top: 21px;
+	padding-bottom: 36px;
+}
+
+.basket__total {
+	margin-bottom: 29px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #161515;
+
+	span {
+		margin-left: 19px;
+	}
+}
+
+.basket__btn {
+	margin-bottom: 15px;
+}
+
+.basket__bonus {
+	max-width: 200px;
+
+	font-size: 14px;
+
+	color: #767676;
+
+	b {
+		font-weight: 700;
+		color: #53a253;
+	}
+
+	span {
+		font-weight: 400;
+		color: #161515;
+	}
+}
+
+.basket__bonus-hint {
+	display: inline-block;
+	margin-left: 4px;
+}

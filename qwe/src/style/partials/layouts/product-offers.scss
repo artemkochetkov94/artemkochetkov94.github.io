@@ -1,0 +1,11 @@
+.product-offers {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.product-offers__item {
+	width: 25%;
+	height: 490px;
+
+	margin: 0 25px;
+}

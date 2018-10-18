@@ -1,0 +1,61 @@
+// .characteristic-list {}
+
+.characteristic {
+	float: left;
+	width: 50%;
+	margin-bottom: 34px;
+	color: #161515;
+}
+
+.characteristic__title {
+	margin-bottom: 14px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #161515;
+}
+
+.characteristic__table {
+	font-size: 14px;
+	max-width: 448px;
+}
+
+.characteristic__row {
+	position: relative;
+
+	display: flex;
+	justify-content: space-between;
+
+	overflow: hidden;
+
+	&::before {
+		content: '.........................................................................................................................................................................................................................................................';
+
+		position: absolute;
+
+		bottom: 1px;
+		left: 0;
+
+		width: 100%;
+	}
+
+	span {
+		position: relative;
+
+		z-index: 1;
+
+		display: inline-block;
+
+		line-height: 1.6;
+
+		background-color: #fff;
+
+		&:nth-child(1) {
+			padding-right: 10px;
+		}
+
+		&:nth-child(2) {
+			padding-left: 20px;
+			min-width: 115px;
+		}
+	}
+}

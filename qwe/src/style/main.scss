@@ -1,0 +1,69 @@
+@import 'partials/base/reset';
+@import 'partials/base/fonts';
+@import 'partials/base/grid';
+
+@import 'partials/base/var';
+
+@import 'partials/base/typography';
+@import 'partials/base/template';
+@import 'partials/base/app';
+
+
+// sprite
+@import 'generated/_sprite-svg';
+
+
+// mixins
+@import 'partials/mixins/expand-transition';
+
+
+// libs
+// @import 'partials/libs/bootstrap/bootstrap-grid';
+@import 'partials/libs/ion.rangeSlider/ion.rangeSlider';
+@import 'partials/libs/ion.rangeSlider/ion.rangeSlider.skinHTML5';
+@import 'partials/libs/selectric';
+@import 'partials/libs/magnific-popup';
+@import 'partials/libs/slick';
+
+
+// blocks
+@import 'partials/blocks/btn';
+@import 'partials/blocks/search';
+@import 'partials/blocks/pagination';
+@import 'partials/blocks/filter-panel';
+@import 'partials/blocks/filters';
+@import 'partials/blocks/range';
+@import 'partials/blocks/checkbox';
+@import 'partials/blocks/stars';
+@import 'partials/blocks/basket';
+@import 'partials/blocks/select';
+@import 'partials/blocks/hint';
+@import 'partials/blocks/counter';
+@import 'partials/blocks/socials';
+@import 'partials/blocks/input-with-label';
+@import 'partials/blocks/menu';
+@import 'partials/blocks/product';
+@import 'partials/blocks/product-offer';
+
+
+// layouts
+@import 'partials/layouts/header';
+@import 'partials/layouts/footer';
+@import 'partials/layouts/products';
+@import 'partials/layouts/breadcrumbs';
+@import 'partials/layouts/content-block';
+@import 'partials/layouts/popup';
+@import 'partials/layouts/popup-login';
+@import 'partials/layouts/page-header';
+@import 'partials/layouts/tabs';
+@import 'partials/layouts/product-offers';
+
+
+// pages
+	// homepage
+	@import 'partials/pages/catalog/index';
+
+	// card-product
+	@import 'partials/pages/card-product/index';
+	@import 'partials/pages/card-product/goods';
+	@import 'partials/pages/card-product/characteristic';

@@ -1,0 +1,40 @@
+.range__inputs {
+	display: flex;
+}
+
+.range__input {
+	width: 50%;
+
+	& + .range__input {
+		margin-left: -1px;
+	}
+
+	input {
+		width: 100%;
+
+		padding: 14px 10px;
+
+		font-size: 13px;
+
+		border: 1px solid #dedede;
+
+		color: #000000;
+
+		&::-webkit-input-placeholder {
+		  font-size: 13px;
+		  color: #bababa;
+		}
+		&::-moz-placeholder {
+		  font-size: 13px;
+		  color: #bababa;
+		}
+		&:-ms-input-placeholder {
+		  font-size: 13px;
+		  color: #bababa;
+		}
+		&:-moz-placeholder {
+		  font-size: 13px;
+		  color: #bababa;
+		}
+	}
+}

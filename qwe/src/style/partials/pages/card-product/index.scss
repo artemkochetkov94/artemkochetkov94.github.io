@@ -1,0 +1,8 @@
+.card-product__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-product__main {
+	width: calc(100% - 335px);
+}

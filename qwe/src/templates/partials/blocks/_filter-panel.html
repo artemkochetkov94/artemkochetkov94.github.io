@@ -1,0 +1,21 @@
+{% import '../_mixins.html' as mixins %}
+
+<div class="filter-panel">
+	<button class="filter-panel__item catalog__filter-btn"></button>
+	<div class="filter-panel__item">
+		<div class="filter-panel__sort">
+			<span class="filter-panel__sort-title">Сортировать:</span>
+			<a href="#" class="filter-panel__sort-item active"><span>По цене</span></a>
+			<a href="#" class="filter-panel__sort-item"><span>По популярности</span></a>
+			<a href="#" class="filter-panel__sort-item"><span>По доступности</span></a>
+		</div>
+		<div class="filter-panel__grid">
+			<button type="button" class="filter-panel__grid-item active">
+				{{ mixins.icon('icon-grid') }}
+			</button>
+			<button type="button" class="filter-panel__grid-item">
+				{{ mixins.icon('icon-list') }}
+			</button>
+		</div>
+	</div>
+</div>
