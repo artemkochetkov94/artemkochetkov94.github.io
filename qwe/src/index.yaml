@@ -1,9 +1,0 @@
-ProjectTitle: newProjectStart
-
-PageList:
-- file: icons.html
-  ready: 50
-- file: main.html
-  ready: 50
-- file: card-product.html
-  ready: 50
