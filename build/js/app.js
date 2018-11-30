@@ -106,7 +106,7 @@ exports.default = function () {
 			filter: filterValue
 		});
 
-		gridNav.querySelector('.active').classList.remove('active');
+		$gridNav.querySelector('.active').classList.remove('active');
 		event.target.classList.add('active');
 	});
 }();
