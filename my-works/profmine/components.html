@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="css/main.css"> </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header js-header">
+        <div class="container">
+          <div class="header__inner"> <button type="button" class="menu-toggler js-menu-toggler">
+				<span class="menu-toggler__inner"></span>
+			</button>
+            <div class="info-line">
+              <div class="info-line__logo"> <img src="img/static/logo.png" alt="#"> </div>
+              <nav class="menu js-menu">
+                <ul>
+                  <li><a href="#equipment" data-title="Оборудование">Оборудование</a></li>
+                  <li><a href="#" data-title="Тарифы">Тарифы</a></li>
+                  <li><a href="#plus" data-title="Почему мы?">Почему мы?</a></li>
+                  <li><a href="#contact" data-title="Контакты">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="info-line__phone"> <svg class="icon-svg icon-phone" width="100%" height="100%">
+	<use xlink:href="/img/static/sprite.svg#icon-phone"></use>
+</svg>
+                <div class="phone"> <a href="tel:75665856599">+7 (566) <span>58 56 599</span></a> <span>Звонок бесплатный</span> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content"> </div>
+      <footer class="footer" id="contact">
+        <div class="footer__top">
+          <div class="map-outer">
+            <div class="map js-map" id="main-map" data-geo='{"lat":"55.835510", "lng":"37.500618"}'></div>
+            <div class="map__info">
+              <div class="container">
+                <div class="map__info-inner">
+                  <div class="form">
+                    <div class="form__title">Бесплатная <span>консультация</span></div>
+                    <form>
+                      <div class="form__form-group">
+                        <div class="form-group"> <input type="text" name="name" placeholder="Имя" required>
+                          <div class="form-group__icon"> <svg class="icon-svg icon-user" width="100%" height="100%">
+	<use xlink:href="/img/static/sprite.svg#icon-user"></use>
+</svg> </div>
+                        </div>
+                      </div>
+                      <div class="form__form-group">
+                        <div class="form-group"> <input type="tel" name="phone" placeholder="Телефон" required>
+                          <div class="form-group__icon"> <svg class="icon-svg icon-phone" width="100%" height="100%">
+	<use xlink:href="/img/static/sprite.svg#icon-phone"></use>
+</svg> </div>
+                        </div>
+                      </div>
+                      <div class="form__button">
+                        <div class="btn-outline btn-outline--secondary"> <button type="submit" class="btn btn--secondary btn--h-50 btn--full-width">Забронировать место</button> </div>
+                      </div>
+                      <div class="form__checkbox">
+                        <div class="checkbox"> <input id="footer__form-check" type="checkbox"> <label for="footer__form-check">Согласен с обработкой персональных данных</label> </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__middle">
+          <div class="container">
+            <div class="info-line">
+              <div class="info-line__logo"> <img src="img/static/logo.png" alt="#"> </div>
+              <nav class="menu js-menu">
+                <ul>
+                  <li><a href="#equipment" data-title="Оборудование">Оборудование</a></li>
+                  <li><a href="#" data-title="Тарифы">Тарифы</a></li>
+                  <li><a href="#plus" data-title="Почему мы?">Почему мы?</a></li>
+                  <li><a href="#contact" data-title="Контакты">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="info-line__phone"> <svg class="icon-svg icon-phone" width="100%" height="100%">
+	<use xlink:href="/img/static/sprite.svg#icon-phone"></use>
+</svg>
+                <div class="phone"> <a href="tel:75665856599">+7 (566) <span>58 56 599</span></a> <span>Звонок бесплатный</span> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="footer__bottom-inner">
+              <div class="footer__copyright">© 2018 ProfMine. Create by Dmitry Volkov</div>
+              <div class="footer__socials">
+                <div class="socials">
+                  <div class="socials__item"> <a href="#" class="social social--facebook" style="background-image: url('img/static/socials-sprite.png');"></a> </div>
+                  <div class="socials__item"> <a href="#" class="social social--in" style="background-image: url('img/static/socials-sprite.png');"></a> </div>
+                  <div class="socials__item"> <a href="#" class="social social--instagram" style="background-image: url('img/static/socials-sprite.png');"></a> </div>
+                  <div class="socials__item"> <a href="#" class="social social--twitter" style="background-image: url('img/static/socials-sprite.png');"></a> </div>
+                  <div class="socials__item"> <a href="#" class="social social--google-plus" style="background-image: url('img/static/socials-sprite.png');"></a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="popup js-popup mfp-hide success">
+      <div class="popup__inner">
+        <div class="form">
+          <div class="form__title">Бесплатная <span>консультация</span></div>
+          <form>
+            <div class="form__form-group">
+              <div class="form-group"> <input type="text" name="name" placeholder="Имя" required>
+                <div class="form-group__icon"> <svg class="icon-svg icon-user" width="100%" height="100%">
+	<use xlink:href="/img/static/sprite.svg#icon-user"></use>
+</svg> </div>
+              </div>
+            </div>
+            <div class="form__form-group">
+              <div class="form-group"> <input type="tel" name="phone" placeholder="Телефон" required>
+                <div class="form-group__icon"> <svg class="icon-svg icon-phone" width="100%" height="100%">
+	<use xlink:href="/img/static/sprite.svg#icon-phone"></use>
+</svg> </div>
+              </div>
+            </div>
+            <div class="form__button">
+              <div class="btn-outline btn-outline--secondary"> <button type="submit" class="btn btn--secondary btn--h-50 btn--full-width">Забронировать место</button> </div>
+            </div>
+            <div class="form__checkbox">
+              <div class="checkbox"> <input id="popup__form-check" type="checkbox"> <label for="popup__form-check">Согласен с обработкой персональных данных</label> </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="popup__success"><b><span>заявка</span> отправленна</b> спасибо!</div> <button class="popup__close js-popup-close"></button> </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8f0bfae0-11d5-4051-b4c6-2d92cf049653&lang=ru_RU"></script>
+    <script src="libs/jquery.magnific-popup.min.js"></script>
+    <script src="libs/lightslider.min.js"></script>
+    <script src="libs/svg4everybody.min.js"></script>
+    <script>
+      svg4everybody();
+
+    </script>
+    <script src="js/app.js"></script>
+  </body>
+
+</html>

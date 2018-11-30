@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mainpage</title>
+    <link rel="stylesheet" href="css/main.css"> </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header js-header">
+        <div class="container">
+          <div class="header__inner"> <button type="button" class="menu-toggler js-menu-toggler">
+				<span class="menu-toggler__inner"></span>
+			</button>
+            <div class="info-line">
+              <div class="info-line__logo"> <img src="img/static/logo.png" alt="#"> </div>
+              <nav class="menu js-menu">
+                <ul>
+                  <li><a href="#equipment" data-title="Оборудование">Оборудование</a></li>
+                  <li><a href="#" data-title="Тарифы">Тарифы</a></li>
+                  <li><a href="#plus" data-title="Почему мы?">Почему мы?</a></li>
+                  <li><a href="#contact" data-title="Контакты">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="info-line__phone"> <svg class="icon-svg icon-phone" width="100%" height="100%">
+	<use xlink:href="/img/static/sprite.svg#icon-phone"></use>
+</svg>
+                <div class="phone"> <a href="tel:75665856599">+7 (566) <span>58 56 599</span></a> <span>Звонок бесплатный</span> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="hero" style="background-image: url('img/static/hero-bg.jpg');">
+          <div class="container">
+            <div class="hero__inner">
+              <div class="hero__info">
+                <div class="hero__title">
+                  <div class="h1">Майнинг - отель <span>в Екатеринбурге</span></div>
+                </div>
+                <div class="hero__subtitle">Размещение <span>ASIC</span> и <span class="ws-nowrap">майнинг-ферм</span></div>
+                <div class="hero__border-text">Наиболее выгодные способы майнинга биткоинов на сегодняшний день</div> <img src="img/static/hero-img-decor.png" alt="#" class="hero__img-decor"> </div>
+              <div class="hero__form" style="background-image: url('img/static/hero-form-bg.jpg');">
+                <div class="form">
+                  <div class="form__title">Бесплатная <span>консультация</span></div>
+                  <form>
+                    <div class="form__form-group">
+                      <div class="form-group"> <input type="text" name="name" placeholder="Имя" required>
+                        <div class="form-group__icon"> <svg class="icon-svg icon-user" width="100%" height="100%">
+	<use xlink:href="/img/static/sprite.svg#icon-user"></use>
+</svg> </div>
+                      </div>
+                    </div>
+                    <div class="form__form-group">
+                      <div class="form-group"> <input type="tel" name="phone" placeholder="Телефон" required>
+                        <div class="form-group__icon"> <svg class="icon-svg icon-phone" width="100%" height="100%">
+	<use xlink:href="/img/static/sprite.svg#icon-phone"></use>
+</svg> </div>
+                      </div>
+                    </div>
+                    <div class="form__button">
+                      <div class="btn-outline btn-outline--secondary"> <button type="submit" class="btn btn--secondary btn--h-50 btn--full-width">Забронировать место</button> </div>
+                    </div>
+                    <div class="form__checkbox">
+                      <div class="checkbox"> <input id="hero__form-check" type="checkbox"> <label for="hero__form-check">Согласен с обработкой персональных данных</label> </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services">
+          <div class="container">
+            <div class="h2"><span data-title="УСЛУГИ">УСЛУГИ</span></div>
+            <div class="services-list">
+              <a href="#" class="services-list__item service">
+                <div class="service__num">01</div>
+                <div class="service__text">Охрана <span>24/7</span></div>
+                <div class="service__decor"></div>
+              </a>
+              <a href="#" class="services-list__item service">
+                <div class="service__num">02</div>
+                <div class="service__text">Доступ к видеомониторингу <br><span>оборудования</span></div>
+                <div class="service__decor"></div>
+              </a>
+              <a href="#" class="services-list__item service">
+                <div class="service__num">03</div>
+                <div class="service__text">Пожарная <br><span>сигнализация</span></div>
+                <div class="service__decor"></div>
+              </a>
+              <a href="#" class="services-list__item service">
+                <div class="service__num">04</div>
+                <div class="service__text">Удаленная <br><span>настройка оборудования</span></div>
+                <div class="service__decor"></div>
+              </a>
+              <a href="#" class="services-list__item service">
+                <div class="service__num">05</div>
+                <div class="service__text">Техническое <br><span>обслуживание</span></div>
+                <div class="service__decor"></div>
+              </a>
+              <a href="#" class="services-list__item service">
+                <div class="service__num">06</div>
+                <div class="service__text">Бесплатная <br><span>электроенергия</span></div>
+                <div class="service__decor"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="promo">
+          <div class="container">
+            <div class="promo__inner" style="background-image:url('img/static/promo-1.jpg');">
+              <div class="promo__text">Помогаем с транспортировкой <span>оборудования</span></div> <img src="img/static/promo-1-decor.png" class="promo__decor" alt="#"> </div>
+          </div>
+        </div>
+        <div class="plus-outer" id="plus">
+          <div class="container">
+            <div class="plus-title h2"><span data-title="Почему мы?">Почему мы?</span></div>
+            <div class="plus-list">
+              <div class="plus-list__item plus">
+                <div class="plus__icon" style="background-image: url('img/static/plus-sprite.png');"></div>
+                <div class="plus__title">Закрытая территория</div>
+              </div>
+              <div class="plus-list__item plus">
+                <div class="plus__icon" style="background-image: url('img/static/plus-sprite.png');"></div>
+                <div class="plus__title">Обслуживающий персонал</div>
+              </div>
+              <div class="plus-list__item plus">
+                <div class="plus__icon" style="background-image: url('img/static/plus-sprite.png');"></div>
+                <div class="plus__title">Соблюдение t°&nbsp;режима</div>
+              </div>
+              <div class="plus-list__item plus">
+                <div class="plus__icon" style="background-image: url('img/static/plus-sprite.png');"></div>
+                <div class="plus__title">Заключение договора с&nbsp;юр.&nbsp;лицами</div>
+              </div>
+              <div class="plus-list__item plus">
+                <div class="plus__icon" style="background-image: url('img/static/plus-sprite.png');"></div>
+                <div class="plus__title">Любые варианты оплаты</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="equipment-outer" id="equipment">
+          <div class="equipment-skew">
+            <div class="equipment-skew__inner" style="background-image: url('img/static/equipment-bg.jpg');"></div>
+          </div>
+          <div class="container">
+            <div class="h2 equipment-title"><span data-title="Оборудование">Оборудование</span></div>
+            <div class="equipment-subtitle">У нас можно купить или арендовать любое оборудование</div>
+            <div class="equipment-container">
+              <div class="equipment-list">
+                <div class="equipment-list__item">
+                  <div class="equipment">
+                    <div class="equipment__header">
+                      <div class="equipment__title">Майнинг <span>ферма 8 Card</span></div>
+                      <div class="equipment__subtitle">GAINWARD, pentium g4560</div>
+                    </div>
+                    <div class="equipment__body">
+                      <div class="equipment__carousel">
+                        <div class="equipment__carousel-inner js-equipment-carousel">
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=1"> <img src="img/dynamic/1.png" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=2"> <img src="img/dynamic/1.png" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=3"> <img src="img/dynamic/1.png" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=4"> <img src="img/dynamic/1.png" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=5"> <img src="img/dynamic/1.png" alt="#"> </div>
+                        </div>
+                      </div>
+                      <div class="equipment__price"> <span>от</span>
+                        <div class="equipment__price-row"> <span class="equipment__price-column">
+											<span class="equipment__price-show"><span>230 000</span> руб</span> <span class="equipment__price-hide"><span>230</span> т. руб</span>
+                          </span> <span class="equipment__price-column">255 000 руб</span> </div>
+                      </div>
+                      <div class="equipment__text">Отлично подойдет для продвинутых пользователей <span class="equipment__text-hide">и профессиональных майнеров. Майнинг Ферма 8 card GAINWARD сделана на базе восьми видеокарт P106 6GB Mining Edition. Быстрая окупаемость и низкое энергопотребление.</span></div>
+                      <div class="equipment__actions">
+                        <div class="equipment__action"> <button type="button" class="btn btn--secondary btn--full-width js-popup-btn">Купить</button> </div>
+                        <div class="equipment__action"> <button type="button" class="btn btn--primary btn--full-width js-popup-btn">Арендовать</button> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="equipment-list__item">
+                  <div class="equipment">
+                    <div class="equipment__header">
+                      <div class="equipment__title">Майнинг <span>ферма</span></div>
+                      <div class="equipment__subtitle">Antminer L3+</div>
+                    </div>
+                    <div class="equipment__body">
+                      <div class="equipment__carousel">
+                        <div class="equipment__carousel-inner js-equipment-carousel">
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=1"> <img src="img/dynamic/2.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=2"> <img src="img/dynamic/2.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=3"> <img src="img/dynamic/2.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=4"> <img src="img/dynamic/2.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=5"> <img src="img/dynamic/2.jpg" alt="#"> </div>
+                        </div>
+                      </div>
+                      <div class="equipment__price"> <span>от</span>
+                        <div class="equipment__price-row"> <span class="equipment__price-column">
+											<span class="equipment__price-show"><span>230 000</span> руб</span> <span class="equipment__price-hide"><span>230</span> т. руб</span>
+                          </span> <span class="equipment__price-column">255 000 руб</span> </div>
+                      </div>
+                      <div class="equipment__text">Отлично подойдет для продвинутых пользователей <span class="equipment__text-hide">и профессиональных майнеров. Майнинг Ферма 8 card GAINWARD сделана на базе восьми видеокарт P106 6GB Mining Edition. Быстрая окупаемость и низкое энергопотребление.</span></div>
+                      <div class="equipment__actions">
+                        <div class="equipment__action"> <button type="button" class="btn btn--secondary btn--full-width js-popup-btn">Купить</button> </div>
+                        <div class="equipment__action"> <button type="button" class="btn btn--primary btn--full-width js-popup-btn">Арендовать</button> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="equipment-list__item">
+                  <div class="equipment">
+                    <div class="equipment__header">
+                      <div class="equipment__title">Майнинг <span>ферма 8 Card</span></div>
+                      <div class="equipment__subtitle">Antminer D3</div>
+                    </div>
+                    <div class="equipment__body">
+                      <div class="equipment__carousel">
+                        <div class="equipment__carousel-inner js-equipment-carousel">
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=1"> <img src="img/dynamic/3.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=2"> <img src="img/dynamic/3.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=3"> <img src="img/dynamic/3.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=4"> <img src="img/dynamic/3.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=5"> <img src="img/dynamic/3.jpg" alt="#"> </div>
+                        </div>
+                      </div>
+                      <div class="equipment__price"> <span>от</span>
+                        <div class="equipment__price-row"> <span class="equipment__price-column">
+											<span class="equipment__price-show"><span>230 000</span> руб</span> <span class="equipment__price-hide"><span>230</span> т. руб</span>
+                          </span> <span class="equipment__price-column">255 000 руб</span> </div>
+                      </div>
+                      <div class="equipment__text">Отлично подойдет для продвинутых пользователей <span class="equipment__text-hide">и профессиональных майнеров. Майнинг Ферма 8 card GAINWARD сделана на базе восьми видеокарт P106 6GB Mining Edition. Быстрая окупаемость и низкое энергопотребление.</span></div>
+                      <div class="equipment__actions">
+                        <div class="equipment__action"> <button type="button" class="btn btn--secondary btn--full-width js-popup-btn">Купить</button> </div>
+                        <div class="equipment__action"> <button type="button" class="btn btn--primary btn--full-width js-popup-btn">Арендовать</button> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="equipment-list__item">
+                  <div class="equipment">
+                    <div class="equipment__header">
+                      <div class="equipment__title">Майнинг <span>ферма 8 Card</span></div>
+                      <div class="equipment__subtitle">GAINWARD, pentium g4560</div>
+                    </div>
+                    <div class="equipment__body">
+                      <div class="equipment__carousel">
+                        <div class="equipment__carousel-inner js-equipment-carousel">
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=1"> <img src="img/dynamic/4.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=2"> <img src="img/dynamic/4.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=3"> <img src="img/dynamic/4.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=4"> <img src="img/dynamic/4.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=5"> <img src="img/dynamic/4.jpg" alt="#"> </div>
+                        </div>
+                      </div>
+                      <div class="equipment__price"> <span>от</span>
+                        <div class="equipment__price-row"> <span class="equipment__price-column">
+											<span class="equipment__price-show"><span>230 000</span> руб</span> <span class="equipment__price-hide"><span>230</span> т. руб</span>
+                          </span> <span class="equipment__price-column">255 000 руб</span> </div>
+                      </div>
+                      <div class="equipment__text">Отлично подойдет для продвинутых пользователей <span class="equipment__text-hide">и профессиональных майнеров. Майнинг Ферма 8 card GAINWARD сделана на базе восьми видеокарт P106 6GB Mining Edition. Быстрая окупаемость и низкое энергопотребление.</span></div>
+                      <div class="equipment__actions">
+                        <div class="equipment__action"> <button type="button" class="btn btn--secondary btn--full-width js-popup-btn">Купить</button> </div>
+                        <div class="equipment__action"> <button type="button" class="btn btn--primary btn--full-width js-popup-btn">Арендовать</button> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="equipment-list__item">
+                  <div class="equipment">
+                    <div class="equipment__header">
+                      <div class="equipment__title">Майнинг <span>ферма 8 Card</span></div>
+                      <div class="equipment__subtitle">GAINWARD, pentium g4560</div>
+                    </div>
+                    <div class="equipment__body">
+                      <div class="equipment__carousel">
+                        <div class="equipment__carousel-inner js-equipment-carousel">
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=1"> <img src="img/dynamic/5.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=2"> <img src="img/dynamic/5.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=3"> <img src="img/dynamic/5.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=4"> <img src="img/dynamic/5.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=5"> <img src="img/dynamic/5.jpg" alt="#"> </div>
+                        </div>
+                      </div>
+                      <div class="equipment__price"> <span>от</span>
+                        <div class="equipment__price-row"> <span class="equipment__price-column">
+											<span class="equipment__price-show"><span>230 000</span> руб</span> <span class="equipment__price-hide"><span>230</span> т. руб</span>
+                          </span> <span class="equipment__price-column">255 000 руб</span> </div>
+                      </div>
+                      <div class="equipment__text">Отлично подойдет для продвинутых пользователей <span class="equipment__text-hide">и профессиональных майнеров. Майнинг Ферма 8 card GAINWARD сделана на базе восьми видеокарт P106 6GB Mining Edition. Быстрая окупаемость и низкое энергопотребление.</span></div>
+                      <div class="equipment__actions">
+                        <div class="equipment__action"> <button type="button" class="btn btn--secondary btn--full-width js-popup-btn">Купить</button> </div>
+                        <div class="equipment__action"> <button type="button" class="btn btn--primary btn--full-width js-popup-btn">Арендовать</button> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="equipment-list__item">
+                  <div class="equipment">
+                    <div class="equipment__header">
+                      <div class="equipment__title">Майнинг <span>ферма 8 Card</span></div>
+                      <div class="equipment__subtitle">GAINWARD, pentium g4560</div>
+                    </div>
+                    <div class="equipment__body">
+                      <div class="equipment__carousel">
+                        <div class="equipment__carousel-inner js-equipment-carousel">
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=1"> <img src="img/dynamic/6.png" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=2"> <img src="img/dynamic/6.png" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=3"> <img src="img/dynamic/6.png" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=4"> <img src="img/dynamic/6.png" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=5"> <img src="img/dynamic/6.png" alt="#"> </div>
+                        </div>
+                      </div>
+                      <div class="equipment__price"> <span>от</span>
+                        <div class="equipment__price-row"> <span class="equipment__price-column">
+											<span class="equipment__price-show"><span>230 000</span> руб</span> <span class="equipment__price-hide"><span>230</span> т. руб</span>
+                          </span> <span class="equipment__price-column">255 000 руб</span> </div>
+                      </div>
+                      <div class="equipment__text">Отлично подойдет для продвинутых пользователей <span class="equipment__text-hide">и профессиональных майнеров. Майнинг Ферма 8 card GAINWARD сделана на базе восьми видеокарт P106 6GB Mining Edition. Быстрая окупаемость и низкое энергопотребление.</span></div>
+                      <div class="equipment__actions">
+                        <div class="equipment__action"> <button type="button" class="btn btn--secondary btn--full-width js-popup-btn">Купить</button> </div>
+                        <div class="equipment__action"> <button type="button" class="btn btn--primary btn--full-width js-popup-btn">Арендовать</button> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="equipment-list__item">
+                  <div class="equipment">
+                    <div class="equipment__header">
+                      <div class="equipment__title">Майнинг <span>ферма 8 Card</span></div>
+                      <div class="equipment__subtitle">GAINWARD, pentium g4560</div>
+                    </div>
+                    <div class="equipment__body">
+                      <div class="equipment__carousel">
+                        <div class="equipment__carousel-inner js-equipment-carousel">
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=1"> <img src="img/dynamic/7.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=2"> <img src="img/dynamic/7.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=3"> <img src="img/dynamic/7.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=4"> <img src="img/dynamic/7.jpg" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=5"> <img src="img/dynamic/7.jpg" alt="#"> </div>
+                        </div>
+                      </div>
+                      <div class="equipment__price"> <span>от</span>
+                        <div class="equipment__price-row"> <span class="equipment__price-column">
+											<span class="equipment__price-show"><span>230 000</span> руб</span> <span class="equipment__price-hide"><span>230</span> т. руб</span>
+                          </span> <span class="equipment__price-column">255 000 руб</span> </div>
+                      </div>
+                      <div class="equipment__text">Отлично подойдет для продвинутых пользователей <span class="equipment__text-hide">и профессиональных майнеров. Майнинг Ферма 8 card GAINWARD сделана на базе восьми видеокарт P106 6GB Mining Edition. Быстрая окупаемость и низкое энергопотребление.</span></div>
+                      <div class="equipment__actions">
+                        <div class="equipment__action"> <button type="button" class="btn btn--secondary btn--full-width js-popup-btn">Купить</button> </div>
+                        <div class="equipment__action"> <button type="button" class="btn btn--primary btn--full-width js-popup-btn">Арендовать</button> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="equipment-list__item">
+                  <div class="equipment">
+                    <div class="equipment__header">
+                      <div class="equipment__title">Майнинг <span>ферма 8 Card</span></div>
+                      <div class="equipment__subtitle">GAINWARD, pentium g4560</div>
+                    </div>
+                    <div class="equipment__body">
+                      <div class="equipment__carousel">
+                        <div class="equipment__carousel-inner js-equipment-carousel">
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=1"> <img src="img/dynamic/1.png" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=2"> <img src="img/dynamic/1.png" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=3"> <img src="img/dynamic/1.png" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=4"> <img src="img/dynamic/1.png" alt="#"> </div>
+                          <div class="equipment__carousel-item" data-thumb="https://placehold.it/56x47?text=5"> <img src="img/dynamic/1.png" alt="#"> </div>
+                        </div>
+                      </div>
+                      <div class="equipment__price"> <span>от</span>
+                        <div class="equipment__price-row"> <span class="equipment__price-column">
+											<span class="equipment__price-show"><span>230 000</span> руб</span> <span class="equipment__price-hide"><span>230</span> т. руб</span>
+                          </span> <span class="equipment__price-column">255 000 руб</span> </div>
+                      </div>
+                      <div class="equipment__text">Отлично подойдет для продвинутых пользователей <span class="equipment__text-hide">и профессиональных майнеров. Майнинг Ферма 8 card GAINWARD сделана на базе восьми видеокарт P106 6GB Mining Edition. Быстрая окупаемость и низкое энергопотребление.</span></div>
+                      <div class="equipment__actions">
+                        <div class="equipment__action"> <button type="button" class="btn btn--secondary btn--full-width js-popup-btn">Купить</button> </div>
+                        <div class="equipment__action"> <button type="button" class="btn btn--primary btn--full-width js-popup-btn">Арендовать</button> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <img src="img/static/b-right.png" alt="#" class="equipment-decor-1"> <img src="img/static/b-left.png" alt="#" class="equipment-decor-2"> <img src="img/static/equipment-decor.png" alt="#" class="equipment-decor-3"> </div>
+        <div class="steps-outer">
+          <div class="container">
+            <div class="h2 steps-title"><span data-title="Как начать с нами работать?">Как начать с нами работать?</span></div>
+            <div class="steps">
+              <div class="steps-list">
+                <div class="steps__item step ">
+                  <div class="step__header" style="background-image: url('img/static/steps-sprite.png');"></div>
+                  <div class="step__title">Оставить заявку</div>
+                  <div class="step__text">consectetur adipisicing elit,</div>
+                  <div class="step__decor"></div>
+                </div>
+                <div class="steps__item step ">
+                  <div class="step__header" style="background-image: url('img/static/steps-sprite.png');"></div>
+                  <div class="step__title">Обговариваем условия</div>
+                  <div class="step__text">consectetur adipisicing elit,</div>
+                  <div class="step__decor"></div>
+                </div>
+                <div class="steps__item step ">
+                  <div class="step__header" style="background-image: url('img/static/steps-sprite.png');"></div>
+                  <div class="step__title">подписываем договор</div>
+                  <div class="step__text">consectetur adipisicing elit,</div>
+                  <div class="step__decor"></div>
+                </div>
+                <div class="steps__item step  step--accent ">
+                  <div class="step__header" style="background-image: url('img/static/steps-sprite.png');"></div>
+                  <div class="step__title">Поздравляем! Вы наш клиент!</div>
+                  <div class="step__text">consectetur adipisicing elit,</div>
+                  <div class="step__decor"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="promo promo-volumes">
+          <div class="container">
+            <div class="promo__inner" style="background-image:url('img/static/promo-2.jpg');">
+              <div class="promo__text">при объёмах более 100 устройств <span>- Индивидуальные условия</span></div> <img src="img/static/promo-2-decor.png" class="promo__decor" alt="#"> </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer" id="contact">
+        <div class="footer__top">
+          <div class="map-outer">
+            <div class="map js-map" id="main-map" data-geo='{"lat":"55.835510", "lng":"37.500618"}'></div>
+            <div class="map__info">
+              <div class="container">
+                <div class="map__info-inner">
+                  <div class="form">
+                    <div class="form__title">Бесплатная <span>консультация</span></div>
+                    <form>
+                      <div class="form__form-group">
+                        <div class="form-group"> <input type="text" name="name" placeholder="Имя" required>
+                          <div class="form-group__icon"> <svg class="icon-svg icon-user" width="100%" height="100%">
+	<use xlink:href="/img/static/sprite.svg#icon-user"></use>
+</svg> </div>
+                        </div>
+                      </div>
+                      <div class="form__form-group">
+                        <div class="form-group"> <input type="tel" name="phone" placeholder="Телефон" required>
+                          <div class="form-group__icon"> <svg class="icon-svg icon-phone" width="100%" height="100%">
+	<use xlink:href="/img/static/sprite.svg#icon-phone"></use>
+</svg> </div>
+                        </div>
+                      </div>
+                      <div class="form__button">
+                        <div class="btn-outline btn-outline--secondary"> <button type="submit" class="btn btn--secondary btn--h-50 btn--full-width">Забронировать место</button> </div>
+                      </div>
+                      <div class="form__checkbox">
+                        <div class="checkbox"> <input id="footer__form-check" type="checkbox"> <label for="footer__form-check">Согласен с обработкой персональных данных</label> </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__middle">
+          <div class="container">
+            <div class="info-line">
+              <div class="info-line__logo"> <img src="img/static/logo.png" alt="#"> </div>
+              <nav class="menu js-menu">
+                <ul>
+                  <li><a href="#equipment" data-title="Оборудование">Оборудование</a></li>
+                  <li><a href="#" data-title="Тарифы">Тарифы</a></li>
+                  <li><a href="#plus" data-title="Почему мы?">Почему мы?</a></li>
+                  <li><a href="#contact" data-title="Контакты">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="info-line__phone"> <svg class="icon-svg icon-phone" width="100%" height="100%">
+	<use xlink:href="/img/static/sprite.svg#icon-phone"></use>
+</svg>
+                <div class="phone"> <a href="tel:75665856599">+7 (566) <span>58 56 599</span></a> <span>Звонок бесплатный</span> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="footer__bottom-inner">
+              <div class="footer__copyright">© 2018 ProfMine. Create by Dmitry Volkov</div>
+              <div class="footer__socials">
+                <div class="socials">
+                  <div class="socials__item"> <a href="#" class="social social--facebook" style="background-image: url('img/static/socials-sprite.png');"></a> </div>
+                  <div class="socials__item"> <a href="#" class="social social--in" style="background-image: url('img/static/socials-sprite.png');"></a> </div>
+                  <div class="socials__item"> <a href="#" class="social social--instagram" style="background-image: url('img/static/socials-sprite.png');"></a> </div>
+                  <div class="socials__item"> <a href="#" class="social social--twitter" style="background-image: url('img/static/socials-sprite.png');"></a> </div>
+                  <div class="socials__item"> <a href="#" class="social social--google-plus" style="background-image: url('img/static/socials-sprite.png');"></a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="popup js-popup mfp-hide success">
+      <div class="popup__inner">
+        <div class="form">
+          <div class="form__title">Бесплатная <span>консультация</span></div>
+          <form>
+            <div class="form__form-group">
+              <div class="form-group"> <input type="text" name="name" placeholder="Имя" required>
+                <div class="form-group__icon"> <svg class="icon-svg icon-user" width="100%" height="100%">
+	<use xlink:href="/img/static/sprite.svg#icon-user"></use>
+</svg> </div>
+              </div>
+            </div>
+            <div class="form__form-group">
+              <div class="form-group"> <input type="tel" name="phone" placeholder="Телефон" required>
+                <div class="form-group__icon"> <svg class="icon-svg icon-phone" width="100%" height="100%">
+	<use xlink:href="/img/static/sprite.svg#icon-phone"></use>
+</svg> </div>
+              </div>
+            </div>
+            <div class="form__button">
+              <div class="btn-outline btn-outline--secondary"> <button type="submit" class="btn btn--secondary btn--h-50 btn--full-width">Забронировать место</button> </div>
+            </div>
+            <div class="form__checkbox">
+              <div class="checkbox"> <input id="popup__form-check" type="checkbox"> <label for="popup__form-check">Согласен с обработкой персональных данных</label> </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="popup__success"><b><span>заявка</span> отправленна</b> спасибо!</div> <button class="popup__close js-popup-close"></button> </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8f0bfae0-11d5-4051-b4c6-2d92cf049653&lang=ru_RU"></script>
+    <script src="libs/jquery.magnific-popup.min.js"></script>
+    <script src="libs/lightslider.min.js"></script>
+    <script src="libs/svg4everybody.min.js"></script>
+    <script>
+      svg4everybody();
+
+    </script>
+    <script src="js/app.js"></script>
+  </body>
+
+</html>
