@@ -283,6 +283,12 @@ b {
   fill: initial;
 }
 
+.icon-whatsapp {
+  width: 1em;
+  height: 1em;
+  fill: initial;
+}
+
 /*!
  * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
